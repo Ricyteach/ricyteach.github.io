@@ -1,1 +1,7 @@
 theme: jekyll-theme-modernist
+
+# Name of your site (displayed in the header)
+name: Taut Engineering
+
+# Short bio or description (displayed in the header)
+description: Rick Teachey, PE rick@tautengr.com
