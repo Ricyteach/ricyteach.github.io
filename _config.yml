@@ -4,7 +4,7 @@ github:
   is_project_page: false
   
 # Name of your site (displayed in the header)
-name: Taut Engineering
+title: Taut Engineering
 
 # Short bio or description (displayed in the header)
 description: Rick Teachey, PE rick@tautengr.com
