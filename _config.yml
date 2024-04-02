@@ -1,5 +1,8 @@
 theme: jekyll-theme-modernist
 
+github:
+  is_project_page: false
+  
 # Name of your site (displayed in the header)
 name: Taut Engineering
 
