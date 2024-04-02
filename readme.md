@@ -10,14 +10,14 @@ Contact me any time for help on your project.
   action="https://formspree.io/f/xeqyrdov"
   method="POST"
 >
-  <label>
+<p>  <label>
     Your email:
     <input type="email" name="email">
-  </label>
-  <label>
+  </label></p>
+<p>  <label>
     Your message:
     <textarea name="message"></textarea>
-  </label>
+  </label></p>
   <!-- your other form fields go here -->
   <button type="submit">Send</button>
 </form>
