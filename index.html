@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taut Engineering | Rick Teachey, PE</title>
+  <meta name="description" content="Structural and geotechnical engineering services. Rick Teachey, PE — licensed in Ohio, Kentucky, and California.">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Serif+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f8f6f1;
+      --mid: #6b6560;
+      --rule: #d4cfc8;
+      --accent: #8b4513;
+      --white: #ffffff;
+      --max-w: 680px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* — Header — */
+    header {
+      padding: 3rem 2rem 2.5rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-family: 'Questrial', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #BFBFBF;
+      line-height: 1;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      color: var(--mid);
+      margin-top: 0.4rem;
+    }
+
+    header .subtitle {
+      font-size: 1.05rem;
+      color: var(--mid);
+      margin-top: 0.3rem;
+      font-weight: 400;
+    }
+
+    /* — Nav — */
+    nav {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0.75rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--mid);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    /* — Sections — */
+    main {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    section {
+      padding: 2.5rem 0;
+    }
+
+    section + section {
+      border-top: 1px solid var(--rule);
+    }
+
+    section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      color: var(--ink);
+    }
+
+    p + p { margin-top: 1rem; }
+
+    a { color: var(--accent); }
+
+    /* — Project list — */
+    .projects {
+      margin-top: 1.25rem;
+    }
+
+    .project {
+      padding: 1rem 0;
+    }
+
+    .project + .project {
+      border-top: 1px solid var(--rule);
+    }
+
+    .project h3 {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .project p {
+      color: var(--mid);
+      font-size: 0.95rem;
+      line-height: 1.55;
+    }
+
+    /* — Licensure — */
+    .licenses {
+      display: flex;
+      gap: 2.5rem;
+      margin-top: 0.75rem;
+    }
+
+    .license-state {
+      font-size: 0.95rem;
+    }
+
+    .license-state strong {
+      display: block;
+      font-size: 1.5rem;
+      font-family: 'DM Serif Display', serif;
+      font-weight: 400;
+      line-height: 1.2;
+    }
+
+    .license-state span {
+      color: var(--mid);
+      font-size: 0.85rem;
+    }
+
+    /* — Contact form — */
+    .contact-info {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-info a {
+      font-size: 1.05rem;
+      font-weight: 500;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 480px;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--mid);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 0.7rem 0.85rem;
+      border: 1px solid var(--rule);
+      background: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      color: var(--ink);
+      border-radius: 3px;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+
+    textarea { resize: vertical; min-height: 120px; }
+
+    button[type="submit"] {
+      align-self: flex-start;
+      padding: 0.65rem 1.8rem;
+      background: var(--ink);
+      color: var(--paper);
+      border: none;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      border-radius: 3px;
+      transition: background 0.2s;
+    }
+
+    button[type="submit"]:hover { background: var(--accent); }
+
+    /* — Footer — */
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2rem;
+      border-top: 1px solid var(--rule);
+      color: var(--mid);
+      font-size: 0.82rem;
+    }
+
+    /* — Responsive — */
+    @media (max-width: 600px) {
+      header { padding: 2rem 1.25rem 1.5rem; }
+      header h1 { font-size: 1.75rem; }
+      nav, main, footer { padding-left: 1.25rem; padding-right: 1.25rem; }
+      nav ul { gap: 1.25rem; flex-wrap: wrap; }
+      .licenses { flex-wrap: wrap; gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Taut Engr</div>
+    <h1>Taut Engineering</h1>
+    <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#licensure">Licensure</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="about">
+      <p>I'm a licensed professional engineer based in Dayton, Ohio, providing structural and geotechnical engineering services for projects across the United States and internationally. I work directly with clients&mdash;no layers, no hand-offs. When you hire Taut Engineering, you're working with me.</p>
+      <p>My practice focuses on projects that need real engineering judgment, not just code-checking: foundation design and analysis, geotechnical modeling, buried structures, solar racking, cold-formed steel, plan review and stamping, and independent engineering reviews.</p>
+    </section>
+
+    <section id="work">
+      <h2>Representative Work</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Mat Foundation &amp; Anchorage &mdash; Jet Engine Test Stand</h3>
+          <p>Reinforced concrete mat foundation and cast-in-place anchorage system for a jet engine test facility in Nevada. Included PLAXIS 3D finite element modeling and ACI 318 anchorage design, with a full engineering report.</p>
+        </div>
+        <div class="project">
+          <h3>Independent Engineering &mdash; Utility-Scale BESS</h3>
+          <p>Independent engineering review for a utility-scale battery energy storage system in Texas. Sub-consultant role evaluating structural and geotechnical aspects of the facility design.</p>
+        </div>
+        <div class="project">
+          <h3>Large-Diameter Pipe Deflection Analysis</h3>
+          <p>Deflection assessment of large-diameter HDPE pipe for a municipal wastewater treatment project, including evaluation of long-term soil-structure interaction and installation-stage performance.</p>
+        </div>
+        <div class="project">
+          <h3>Backstop Netting Foundation &mdash; School Athletic Facility</h3>
+          <p>Pole and foundation design for a backstop netting system at a high school, including wind loading analysis and drilled shaft foundation design.</p>
+        </div>
+        <div class="project">
+          <h3>Structural Plan Review &amp; PE Stamping</h3>
+          <p>Thorough review and professional engineer stamping of structural design packages produced by other engineers, including commercial and residential projects across multiple states.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="licensure">
+      <h2>Licensure</h2>
+      <div class="licenses">
+        <div class="license-state">
+          <strong>OH</strong>
+          <span>Ohio</span>
+        </div>
+        <div class="license-state">
+          <strong>KY</strong>
+          <span>Kentucky</span>
+        </div>
+        <div class="license-state">
+          <strong>CA</strong>
+          <span>California</span>
+        </div>
+      </div>
+      <p style="margin-top: 1rem; color: var(--mid); font-size: 0.95rem;">Additional state licensure available as needed for specific projects.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-info">
+        <p>Most of my work comes through <a href="https://www.upwork.com/freelancers/rickyteachey" target="_blank" rel="noopener">Upwork</a> or direct referrals. Engagements typically start with a consultation, followed by a scoped proposal for any design or analysis work.</p>
+        <p style="margin-top: 0.75rem;"><a href="mailto:rick@tautengr.com">rick@tautengr.com</a></p>
+      </div>
+
+      <form action="https://formspree.io/f/xeqyrdov" method="POST">
+        <div>
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Taut Engineering
+  </footer>
+
+</body>
+</html>
