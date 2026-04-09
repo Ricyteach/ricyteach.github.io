@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 | Taut Engineering</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Serif+Display&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --ink: #1a1a1a;
+      --paper: #f8f6f1;
+      --mid: #6b6560;
+      --rule: #d4cfc8;
+      --accent: #8b4513;
+      --max-w: 680px;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 3rem 2rem 2.5rem;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .logo {
+      font-family: 'Questrial', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      font-size: 2.4rem;
+      font-weight: 400;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #BFBFBF;
+      line-height: 1;
+    }
+
+    .logo a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      font-weight: 400;
+      color: var(--mid);
+      margin-top: 0.4rem;
+    }
+
+    header .subtitle {
+      font-size: 1.05rem;
+      color: var(--mid);
+      margin-top: 0.3rem;
+    }
+
+    nav {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 2rem;
+      width: 100%;
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      padding: 0.75rem 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--mid);
+      font-size: 0.88rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--ink); }
+
+    a { color: var(--accent); }
+
+    .error-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    .error-content {
+      text-align: center;
+    }
+
+    .error-code {
+      font-family: 'Questrial', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+      font-size: 5rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      color: var(--rule);
+      line-height: 1;
+    }
+
+    .error-message {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: var(--ink);
+      margin-top: 1rem;
+      min-height: 2.5em;
+      transition: opacity 0.3s ease;
+    }
+
+    .error-home {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .error-reload {
+      margin-top: 0.75rem;
+      font-size: 0.82rem;
+      color: var(--rule);
+      cursor: pointer;
+      transition: color 0.2s;
+      border: none;
+      background: none;
+      font-family: 'DM Sans', sans-serif;
+    }
+
+    .error-reload:hover {
+      color: var(--mid);
+    }
+
+    footer {
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 2rem;
+      border-top: 1px solid var(--rule);
+      color: var(--mid);
+      font-size: 0.82rem;
+      width: 100%;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 2rem 1.25rem 1.5rem; }
+      .logo { font-size: 1.75rem; }
+      nav, .error-wrap, footer { padding-left: 1.25rem; padding-right: 1.25rem; }
+      nav ul { gap: 1.25rem; flex-wrap: wrap; }
+      .error-code { font-size: 3.5rem; }
+      .error-message { font-size: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="/">Taut Engr</a></div>
+    <h1>Taut Engineering</h1>
+    <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects">Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="error-wrap">
+    <div class="error-content">
+      <div class="error-code">404</div>
+      <div class="error-message" id="errorMsg"></div>
+      <div class="error-home"><a href="/">Return to solid ground</a></div>
+      <button class="error-reload" id="newMsg" title="Get a different error">&#8635; another opinion</button>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Taut Engineering
+  </footer>
+
+  <script>
+    (function() {
+      var messages = [
+        "Load path not found.",
+        "This page has insufficient bearing capacity.",
+        "Exceeds allowable deflection.",
+        "Bearing capacity: 0 psf.",
+        "This page was not included in the scope of services.",
+        "This page has been condemned by the building department.",
+        "Convergence failure: unstable boundary conditions.",
+        "This page by others than TE."
+      ];
+
+      var last = -1;
+
+      function show() {
+        var idx;
+        do { idx = Math.floor(Math.random() * messages.length); } while (idx === last && messages.length > 1);
+        last = idx;
+        var el = document.getElementById('errorMsg');
+        el.style.opacity = 0;
+        setTimeout(function() {
+          el.textContent = messages[idx];
+          el.style.opacity = 1;
+        }, 200);
+      }
+
+      show();
+      document.getElementById('newMsg').addEventListener('click', show);
+    })();
+  </script>
+
+</body>
+</html>
