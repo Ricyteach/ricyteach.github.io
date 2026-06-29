@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geotechnical Engineering and PLAXIS Finite Element Analysis | Taut Engineering</title>
+  <meta name="description" content="PLAXIS 2D and 3D geotechnical FEA for foundation design, soil-structure interaction, and lateral pile analysis. Rick Teachey, PE provides defensible answers where hand calculations are too conservative.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="/">Taut Engr</a></div>
+    <p class="site-name">Taut Engineering</p>
+    <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/sap2000-ai-automation/">AI + SAP2000</a></li>
+      <li><a href="/cande-buried-structures/">CANDE</a></li>
+      <li><a href="/solar-racking/">Solar</a></li>
+      <li><a href="/structural-engineering/">Structural</a></li>
+      <li><a href="/geotechnical-fea/" aria-current="page">Geotechnical</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <h1>Geotechnical Engineering and PLAXIS Finite Element Analysis</h1>
+      <p>Geotechnical engineering often comes down to whether you can justify a more defensible answer than the conservative default. Hand calculation methods for bearing capacity and settlement are well established, but they're also conservative in ways that can be expensive: oversized foundations, unnecessary embedment depth, or overstated stiffness demands on the supported structure. Finite element analysis lets you model the soil as it actually behaves, including nonlinear stiffness, stress history, layering, and the interaction between the soil and the structure it supports.</p>
+    </section>
+
+    <section>
+      <h2>PLAXIS 2D and 3D Analysis</h2>
+      <p>I work with PLAXIS 2D and 3D for geotechnical FEA, including automation of parametric studies via the PLAXIS Python API. The soil models I use most often are the hardening-soil model and the simpler hyperbolic model, selected based on whether stress-path dependency and unload-reload behavior matter for the problem at hand. K0 initialization sets the in-situ stress state correctly before any loading is applied, which is essential for getting the initial stiffness distribution right in layered profiles.</p>
+      <p>For sites where laboratory or in-situ test data is limited, I calibrate soil parameters to match a target stress-settlement response rather than guessing at constitutive model inputs. Working backward from a target subgrade modulus or allowable settlement to defensible soil parameters is a more transparent and auditable approach than applying generic correlations uncritically.</p>
+    </section>
+
+    <section>
+      <h2>Foundation Design and Soil-Structure Interaction</h2>
+      <p>Bearing capacity and settlement evaluation for shallow and deep foundations, including spread footings, mats, and drilled shafts. For mat foundations supporting sensitive equipment or structures with differential settlement limits, I model the soil explicitly in PLAXIS rather than applying a single assumed subgrade modulus, which captures how stiffness varies across the footprint as load redistributes.</p>
+      <p>Soil-structure interaction is also relevant when the supported structure's stiffness influences how load distributes to the foundation, something that decoupled hand methods can't capture. A stiff mat on variable soil and a flexible mat on the same soil have different settlement and moment distributions, and the difference matters for reinforcement design.</p>
+    </section>
+
+    <section>
+      <h2>Lateral Pile and Drilled Shaft Analysis</h2>
+      <p>Lateral pile and drilled shaft analysis in LPILE using Reese p-y models for sand, clay, and weak rock. For drilled shafts socketed into weak rock, I use the Reese weak-rock p-y model to evaluate whether reduced embedment is defensible against the presumptive IBC rock-socket depth, with rigidity checks to confirm the shaft is behaving as a long pile rather than a rigid pier. This is often the analysis that saves a project from over-drilling into competent rock when the presumptive method is being overly conservative.</p>
+      <p>I've built a custom LPILE input composer and output parser that handles parametric runs without manual re-entry, which makes sensitivity studies and load cases efficient to run and document.</p>
+    </section>
+
+    <section>
+      <h2>Earth Retention and Slope-Adjacent Foundations</h2>
+      <p>Earth pressure design for retaining walls and foundations adjacent to slopes, including the selection between active, at-rest, and yielding-versus-nonyielding pressure based on expected wall movement and structural stiffness. Restrained walls that can't move to develop active pressure need at-rest conditions, and getting that distinction wrong in either direction has real consequences for the structure.</p>
+      <p>Seismic earth pressure under the Mononobe-Okabe framework, with correct handling of sloping backfill, the wave-scattering height reduction for tall walls, and the choice between M-O active pressure and the simplified seismic coefficient approach for shorter walls where the simplified method applies.</p>
+    </section>
+
+    <section>
+      <h2>Parametric Studies and Geogrid Analysis</h2>
+      <p>For design optimization or regulatory support where a range of soil conditions needs to be evaluated, I run PLAXIS parametric studies automated via the Python API. Geogrid-reinforced soil systems are one application: evaluating how geogrid stiffness, spacing, and embedment influence bearing-capacity improvement for spread footings, across a range of soil stiffness values, without running each case manually.</p>
+      <p>The Python automation means the parametric sweep is documented, repeatable, and produces structured output that feeds directly into the report rather than requiring manual extraction from dozens of individual model runs.</p>
+      <p>If you need geotechnical FEA, foundation analysis, or lateral pile design, <a href="/#contact">get in touch</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Taut Engineering
+  </footer>
+
+</body>
+</html>

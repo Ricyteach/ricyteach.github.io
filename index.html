@@ -4,268 +4,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taut Engineering | Rick Teachey, PE</title>
-  <meta name="description" content="Structural and geotechnical engineering services. Rick Teachey, PE — licensed in Ohio, Kentucky, and California.">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=DM+Serif+Display&display=swap');
-    @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
-
-    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
-    :root {
-      --ink: #1a1a1a;
-      --paper: #f8f6f1;
-      --mid: #6b6560;
-      --rule: #d4cfc8;
-      --accent: #8b4513;
-      --white: #ffffff;
-      --max-w: 680px;
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: 'DM Sans', sans-serif;
-      color: var(--ink);
-      background: var(--paper);
-      line-height: 1.65;
-      font-size: 17px;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    /* — Header — */
-    header {
-      padding: 3rem 2rem 2.5rem;
-      max-width: var(--max-w);
-      margin: 0 auto;
-    }
-
-    .logo {
-      font-family: 'Questrial', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-      font-size: 2.4rem;
-      font-weight: 400;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #BFBFBF;
-      line-height: 1;
-    }
-
-    header h1 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.15rem;
-      font-weight: 400;
-      letter-spacing: -0.01em;
-      line-height: 1.15;
-      color: var(--mid);
-      margin-top: 0.4rem;
-    }
-
-    header .subtitle {
-      font-size: 1.05rem;
-      color: var(--mid);
-      margin-top: 0.3rem;
-      font-weight: 400;
-    }
-
-    /* — Nav — */
-    nav {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 2rem;
-      border-top: 1px solid var(--rule);
-      border-bottom: 1px solid var(--rule);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 2rem;
-      padding: 0.75rem 0;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--mid);
-      font-size: 0.88rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      transition: color 0.2s;
-    }
-
-    nav a:hover { color: var(--ink); }
-
-    /* — Sections — */
-    main {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    section {
-      padding: 2.5rem 0;
-    }
-
-    section + section {
-      border-top: 1px solid var(--rule);
-    }
-
-    section h2 {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.35rem;
-      font-weight: 400;
-      margin-bottom: 1rem;
-      color: var(--ink);
-    }
-
-    p + p { margin-top: 1rem; }
-
-    a { color: var(--accent); }
-
-    /* — Project list — */
-    .projects {
-      margin-top: 1.25rem;
-    }
-
-    .project {
-      padding: 1rem 0;
-    }
-
-    .project + .project {
-      border-top: 1px solid var(--rule);
-    }
-
-    .project h3 {
-      font-family: 'DM Sans', sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-
-    .project p {
-      color: var(--mid);
-      font-size: 0.95rem;
-      line-height: 1.55;
-    }
-
-    /* — Licensure — */
-    .licenses {
-      display: flex;
-      gap: 2.5rem;
-      margin-top: 0.75rem;
-    }
-
-    .license-state {
-      font-size: 0.95rem;
-    }
-
-    .license-state strong {
-      display: block;
-      font-size: 1.5rem;
-      font-family: 'DM Serif Display', serif;
-      font-weight: 400;
-      line-height: 1.2;
-    }
-
-    .license-state span {
-      color: var(--mid);
-      font-size: 0.85rem;
-    }
-
-    /* — Contact form — */
-    .contact-info {
-      margin-bottom: 1.5rem;
-    }
-
-    .contact-info a {
-      font-size: 1.05rem;
-      font-weight: 500;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      max-width: 480px;
-    }
-
-    label {
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--mid);
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 0.7rem 0.85rem;
-      border: 1px solid var(--rule);
-      background: var(--white);
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.95rem;
-      color: var(--ink);
-      border-radius: 3px;
-      transition: border-color 0.2s;
-    }
-
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: var(--accent);
-    }
-
-    textarea { resize: vertical; min-height: 120px; }
-
-    button[type="submit"] {
-      align-self: flex-start;
-      padding: 0.65rem 1.8rem;
-      background: var(--ink);
-      color: var(--paper);
-      border: none;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.88rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      cursor: pointer;
-      border-radius: 3px;
-      transition: background 0.2s;
-    }
-
-    button[type="submit"]:hover { background: var(--accent); }
-
-    /* — Footer — */
-    footer {
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 2rem;
-      border-top: 1px solid var(--rule);
-      color: var(--mid);
-      font-size: 0.82rem;
-    }
-
-    /* — Responsive — */
-    @media (max-width: 600px) {
-      header { padding: 2rem 1.25rem 1.5rem; }
-      header h1 { font-size: 1.75rem; }
-      nav, main, footer { padding-left: 1.25rem; padding-right: 1.25rem; }
-      nav ul { gap: 1.25rem; flex-wrap: wrap; }
-      .licenses { flex-wrap: wrap; gap: 1.5rem; }
-    }
-  </style>
+  <meta name="description" content="Structural and geotechnical engineering services. Rick Teachey, PE, licensed in Ohio, Kentucky, and California. Foundation design, PLAXIS FEA, CANDE buried structures, solar racking, and more.">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
   <header>
-    <div class="logo">Taut Engr</div>
+    <div class="logo"><a href="/">Taut Engr</a></div>
     <h1>Taut Engineering</h1>
     <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
   </header>
 
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#work">Work</a></li>
-      <li><a href="#licensure">Licensure</a></li>
+      <li><a href="/" aria-current="page">Home</a></li>
+      <li><a href="/sap2000-ai-automation/">AI + SAP2000</a></li>
+      <li><a href="/cande-buried-structures/">CANDE</a></li>
+      <li><a href="/solar-racking/">Solar</a></li>
+      <li><a href="/structural-engineering/">Structural</a></li>
+      <li><a href="/geotechnical-fea/">Geotechnical</a></li>
+      <li><a href="/projects/">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
@@ -273,19 +31,45 @@
   <main>
 
     <section id="about">
-      <p>I'm a licensed professional engineer based in Dayton, Ohio, providing structural and geotechnical engineering services for projects across the United States and internationally. I work directly with clients&mdash;no layers, no hand-offs. When you hire Taut Engineering, you're working with me.</p>
-      <p>My practice focuses on projects that need real engineering judgment, not just code-checking: foundation design and analysis, geotechnical modeling, buried structures, solar racking, cold-formed steel, plan review and stamping, and independent engineering reviews.</p>
+      <p>I'm a licensed professional engineer based in Dayton, Ohio, providing structural and geotechnical engineering services for projects across the United States and internationally. I work directly with clients, no layers, no hand-offs. When you hire Taut Engineering, you're working with me.</p>
+      <p>My practice covers foundation design and geotechnical analysis, buried structures and culverts, solar racking, structural steel and cold-formed steel, plan review and PE stamping, and independent engineering reviews. I also build Python automation tools and use AI assistance to run analyses faster, without compromising the engineering judgment behind them.</p>
+    </section>
+
+    <section id="expertise">
+      <h2>Expertise</h2>
+      <div class="projects">
+        <div class="project">
+          <h3><a href="/sap2000-ai-automation/">AI-Assisted Analysis and SAP2000 Automation</a></h3>
+          <p>Python tooling and AI assistance for building, verifying, and documenting structural models. Faster turnaround on independent checks without cutting corners on judgment.</p>
+        </div>
+        <div class="project">
+          <h3><a href="/cande-buried-structures/">Buried Structures and CANDE Finite Element Analysis</a></h3>
+          <p>Nonlinear soil-structure interaction for buried pipe, culverts, drainage structures, and relining systems, including flexible pipe, GRP liners, and precast concrete vaults.</p>
+        </div>
+        <div class="project">
+          <h3><a href="/solar-racking/">Solar Racking Engineering</a></h3>
+          <p>Wind uplift, ballast design, and structural review for rooftop, carport, and ground-mount PV racking systems, including custom Python ballast calculation tooling.</p>
+        </div>
+        <div class="project">
+          <h3><a href="/structural-engineering/">Structural Engineering and Plan Review</a></h3>
+          <p>Hot-rolled and cold-formed steel design, reinforced concrete, independent peer review, and PE stamping with a documented cover-report practice.</p>
+        </div>
+        <div class="project">
+          <h3><a href="/geotechnical-fea/">Geotechnical Engineering and PLAXIS FEA</a></h3>
+          <p>Finite element analysis for foundation design, soil-structure interaction, and lateral pile analysis using PLAXIS 2D/3D with Python API automation.</p>
+        </div>
+      </div>
     </section>
 
     <section id="work">
       <h2>Representative Work</h2>
       <div class="projects">
         <div class="project">
-          <h3>Mat Foundation &amp; Anchorage &mdash; Jet Engine Test Stand</h3>
+          <h3>Mat Foundation and Anchorage: Jet Engine Test Stand</h3>
           <p>Reinforced concrete mat foundation and cast-in-place anchorage system for a jet engine test facility in Nevada. Included PLAXIS 3D finite element modeling and ACI 318 anchorage design, with a full engineering report.</p>
         </div>
         <div class="project">
-          <h3>Independent Engineering &mdash; Utility-Scale BESS</h3>
+          <h3>Independent Engineering: Utility-Scale BESS</h3>
           <p>Independent engineering review for a utility-scale battery energy storage system in Texas. Sub-consultant role evaluating structural and geotechnical aspects of the facility design.</p>
         </div>
         <div class="project">
@@ -293,14 +77,15 @@
           <p>Deflection assessment of large-diameter HDPE pipe for a municipal wastewater treatment project, including evaluation of long-term soil-structure interaction and installation-stage performance.</p>
         </div>
         <div class="project">
-          <h3>Backstop Netting Foundation &mdash; School Athletic Facility</h3>
-          <p>Pole and foundation design for a backstop netting system at a high school, including wind loading analysis and drilled shaft foundation design.</p>
+          <h3>Backstop Netting Foundation: School Athletic Facility</h3>
+          <p>Pole and foundation design for a backstop netting system at a high school, including wind loading analysis, catenary cable sag, and drilled shaft foundation design.</p>
         </div>
         <div class="project">
-          <h3>Structural Plan Review &amp; PE Stamping</h3>
+          <h3>Structural Plan Review and PE Stamping</h3>
           <p>Thorough review and professional engineer stamping of structural design packages produced by other engineers, including commercial and residential projects across multiple states.</p>
         </div>
       </div>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--mid);">More detail on specific project types: <a href="/projects/">representative projects</a>.</p>
     </section>
 
     <section id="licensure">
@@ -319,7 +104,7 @@
           <span>California</span>
         </div>
       </div>
-      <p style="margin-top: 1rem; color: var(--mid); font-size: 0.95rem;">Additional state licensure available as needed for specific projects.</p>
+      <p style="margin-top: 1rem; color: var(--mid); font-size: 0.95rem;">Texas and Florida licensure in progress. Additional state licensure available as needed for specific projects.</p>
     </section>
 
     <section id="contact">

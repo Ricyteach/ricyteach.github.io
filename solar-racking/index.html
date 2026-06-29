@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar Racking Engineering: Rooftop, Carport, and Ground Mount | Taut Engineering</title>
+  <meta name="description" content="Solar racking structural engineering for rooftop ballasted, carport, and ground-mount PV systems. Wind uplift analysis, ballast design, and PE review by Rick Teachey, PE.">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo"><a href="/">Taut Engr</a></div>
+    <p class="site-name">Taut Engineering</p>
+    <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/sap2000-ai-automation/">AI + SAP2000</a></li>
+      <li><a href="/cande-buried-structures/">CANDE</a></li>
+      <li><a href="/solar-racking/" aria-current="page">Solar</a></li>
+      <li><a href="/structural-engineering/">Structural</a></li>
+      <li><a href="/geotechnical-fea/">Geotechnical</a></li>
+      <li><a href="/projects/">Projects</a></li>
+      <li><a href="/#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section>
+      <h1>Solar Racking Engineering: Rooftop, Carport, and Ground Mount</h1>
+      <p>Solar racking looks simple until the wind load analysis runs, or a module shifts in a storm. The structural questions are real: how much wind pressure, where on the array, and how does the racking resist it? The answers depend on roof geometry, terrain exposure, local design wind speed, racking layout, and whether you're applying code pressure coefficients or wind-tunnel test data. I've done enough racking engineering to know where the shortcuts get taken and what they cost.</p>
+    </section>
+
+    <section>
+      <h2>Rooftop Ballasted Systems</h2>
+      <p>For ballasted rooftop racking, the central structural question is how much ballast per module is needed to resist uplift under the design wind event. The answer is less obvious than it looks. ASCE 7 component-and-cladding pressure coefficients apply to roof surfaces, not to racking systems specifically, so most racking manufacturers conduct wind-tunnel testing to establish their own GCp datasets. Applying those test results correctly requires understanding the exposure assumptions baked into the test, the effective wind area definitions, how roof-edge and corner zones change the demand, and how to handle rows that span multiple pressure zones.</p>
+      <p>Getting this wrong in either direction is a problem. Overestimating the load means excess ballast, which is dead weight the roof structure has to carry and cost the installer absorbs. Underestimating it means modules that can move under design-level wind, which is a warranty and liability exposure.</p>
+    </section>
+
+    <section>
+      <h2>ballast_calc: Python Ballast Calculation Library</h2>
+      <p>I built a Python library (ballast_calc) that computes per-module wind forces and ballast demand for rooftop rail-based PV racking. It handles wind-zone classification, exposed-edge and corner penalties, deflection-limited ballast logic, and row-to-row connector considerations. The coefficient backend is pluggable: it supports both ASCE 7 code-tabulated values and proprietary wind-tunnel GCp datasets in tabular or equation form. This lets me run the same structural logic against manufacturer-specific test data without rebuilding the calculation for each racking system.</p>
+      <p>The library uses Pydantic data models throughout, which means inputs are validated before the calculation runs and the output is structured and traceable.</p>
+    </section>
+
+    <section>
+      <h2>Carport and Ground-Mount Systems</h2>
+      <p>Carport racking adds structural complexity that rooftop systems don't have: the frame carries its own gravity loads, spans between columns, and must resist lateral load from wind acting on the panel array. Multi-market design means running the same frame geometry against different design wind speeds, ground snow loads, and seismic zones, and checking that the members and connections work everywhere. I've built carport design calculators that handle multiple markets in parallel, including ledger and beam design, double-overhanging ledger configurations, and self-supporting panel checks.</p>
+      <p>Ground-mount systems have their own structural considerations: foundation depth, frost protection, post embedment, lateral resistance in varying soil conditions, and the wind load distribution across an array at grade rather than elevated above a roof parapet.</p>
+    </section>
+
+    <section>
+      <h2>Independent Review and Due Diligence</h2>
+      <p>I do structural peer review of solar racking designs produced by others, covering rooftop, carport, and canopy systems. This means checking the wind load analysis for code edition and exposure category, verifying that the structural frame checks out under the claimed loads, and confirming that connections and anchorage are designed for what the analysis actually demands. For utility-scale energy projects, I've served as a sub-consultant independent engineer reviewing structural and geotechnical aspects of facility designs on behalf of project-finance teams.</p>
+      <p>If you're designing a racking system, reviewing one, or need a PE to evaluate a wind load methodology, <a href="/#contact">get in touch</a>.</p>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2026 Taut Engineering
+  </footer>
+
+</body>
+</html>
