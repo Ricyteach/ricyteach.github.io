@@ -1,0 +1,33 @@
+---
+layout: article
+title: "Why I Built an AI Tool That Writes SAP2000 Models"
+description: "How I built a skill that generates SAP2000 input files from structured descriptions, what it took to make it reliable, and what it does and does not mean for your project."
+---
+
+*And what it does, and does not, mean for your project.*
+
+Every structural engineer who uses SAP2000 knows the part of the job that isn't really engineering. Before you can analyze anything, you have to build the model: nodes, frames, sections, supports, load patterns, load cases, combinations. On a routine job that setup can eat hours, and not one of those hours goes to judgment. They go to data entry.
+
+A SAP2000 model is, underneath the interface, structured data. The geometry, the section properties, the loads, all of it can be expressed as a text file that the program reads back in. Which means the real bottleneck was never the analysis. It was translating engineering intent into the exact format the software expects. That is a translation problem, and translation is something modern AI is genuinely good at.
+
+So I built a tool that does the translating. I describe a structure in plain language, and the AI assembles the corresponding SAP2000 input file. That sentence makes it sound easy. It was not.
+
+## The part most people miss
+
+A model like Claude is very good at producing structured text. But it does not know SAP2000's input format. None of that format lives in its general knowledge, and the format itself is unforgiving: a dense text specification full of ordering rules, unit conventions, escaping behavior, and quirks that break silently when you get them slightly wrong. You cannot simply ask an AI to "write me a SAP2000 file" and trust what comes back. It will hand you something that looks correct and is wrong in ways that matter.
+
+Getting it to work meant teaching the model the format from the ground up, through a long iterative process: build, test against real models, find exactly where it breaks, correct, and repeat, over and over, across a great deal of time and compute. What you end up with is called a skill, a hard-won body of encoded knowledge that lets the AI produce input the program will actually accept and that means what I intended it to mean. None of that knowledge came for free, and none of it is the sort of thing you knock out on a weekend.
+
+What this really demands is fluency in two domains at the same time. You have to know the structural software deeply enough to catch when its output is subtly wrong, because the AI will confidently produce subtly wrong things, and you have to understand how these AI systems actually behave and fail well enough to corner them into reliability. There are plenty of structural engineers. There are plenty of people who can prompt an AI. The overlap, people who can do both well enough to build something a licensed engineer would put a seal on, is very thin. That isn't a complaint. It is the whole point.
+
+## Why you can trust a model an AI helped build
+
+The sensible question any client asks is this: if an AI built it, why should I trust it? The answer is that the AI never gets the final word, and never touches the judgment. Every model is round-trip validated, generated, read back, and checked against what I actually intended, and then it goes through the same review any model of mine would. A licensed professional engineer verifies it and stamps it. The tool does the assembly. The engineering stays human. That division is not a compromise I put up with. It is the design.
+
+## What it actually buys you
+
+Speed, without a quality penalty. Work that used to take days, parametric studies, design options, product calculators that need the same model rebuilt a hundred different ways, now turns around in hours. For repetitive and parametric problems especially, the difference is dramatic, and it shows up in both your schedule and your fee.
+
+It does not do everything, and I would be wary of anyone who told you their version did. It does not do the conceptual design, the part where you decide what the structure should be. It does not replace an engineer's read on whether an answer is even reasonable. There are problems where it offers no advantage at all, and on those I build the model by hand like everyone else. The tool is excellent at the tedious, well-defined assembly that used to waste my time, and it stays silent on the things that genuinely require an engineer. That boundary is exactly what makes the rest of it trustworthy.
+
+If you have a project that fits, particularly something parametric or repetitive in SAP2000, that is precisely where this pays off. And if it doesn't fit, I will tell you that too.
