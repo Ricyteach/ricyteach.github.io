@@ -1,10 +1,27 @@
-theme: jekyll-theme-modernist
+title: "Taut Engineering"
+description: "Structural and geotechnical engineering services. Rick Teachey, PE, licensed in Ohio, Kentucky, and California."
+url: "https://tautengr.com"
+baseurl: ""
+
+author:
+  name: "Rick L. Teachey, Jr., P.E."
+  email: "rick@tautengr.com"
+
+social:
+  name: "Rick L. Teachey, Jr., P.E."
+  links:
+    - "https://www.linkedin.com/in/rteachey/"
+    - "https://www.upwork.com/freelancers/rickyteachey"
+    - "https://github.com/Ricyteach"
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 github:
   is_project_page: false
-  
-# Name of your site (displayed in the header)
-title: Taut Engineering
 
-# Short bio or description (displayed in the header)
-description: Rick Teachey, PE rick@tautengr.com
+exclude:
+  - readme.md
+  - taut_project_portfolio.md
+  - taut_capabilities_portfolio.md

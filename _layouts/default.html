@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  {% include json-ld.html %}
+  <!-- Cloudflare Web Analytics (free, no cookies) -->
+  <!-- Sign up at https://dash.cloudflare.com/web-analytics, add tautengr.com, paste your token below, then uncomment -->
+  <!-- <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "YOUR_TOKEN_HERE"}'></script> -->
+</head>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
+
+  <header class="site-header">
+    <div class="logo"><a href="/">Taut Engr</a></div>
+    <p class="site-name">Taut Engineering</p>
+    <p class="site-subtitle">Rick L. Teachey, Jr., P.E.</p>
+  </header>
+
+  {% include nav.html %}
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+</body>
+</html>

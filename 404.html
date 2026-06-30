@@ -1,126 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 | Taut Engineering</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <style>
-    html, body { height: 100%; }
-    body { display: flex; flex-direction: column; }
-    header, nav { width: 100%; }
-    .error-wrap {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      max-width: var(--max-w);
-      margin: 0 auto;
-      padding: 2rem;
-      width: 100%;
-    }
-    .error-content { text-align: center; }
-    .error-code {
-      font-family: 'Questrial', 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-      font-size: 5rem;
-      font-weight: 400;
-      letter-spacing: 0.12em;
-      color: var(--rule);
-      line-height: 1;
-    }
-    .error-message {
-      font-family: 'DM Serif Display', serif;
-      font-size: 1.35rem;
-      font-weight: 400;
-      color: var(--ink);
-      margin-top: 1rem;
-      min-height: 2.5em;
-      transition: opacity 0.3s ease;
-    }
-    .error-home { margin-top: 2rem; font-size: 0.95rem; }
-    .error-reload {
-      margin-top: 0.75rem;
-      font-size: 0.82rem;
-      color: var(--rule);
-      cursor: pointer;
-      transition: color 0.2s;
-      border: none;
-      background: none;
-      font-family: 'DM Sans', sans-serif;
-    }
-    .error-reload:hover { color: var(--mid); }
-    @media (max-width: 600px) {
-      .error-wrap { padding-left: 1.25rem; padding-right: 1.25rem; }
-      .error-code { font-size: 3.5rem; }
-      .error-message { font-size: 1.1rem; }
-    }
-  </style>
-</head>
-<body>
+---
+layout: default
+title: "404"
+body_class: error-page
+sitemap: false
+---
 
-  <header>
-    <div class="logo"><a href="/">Taut Engr</a></div>
-    <p class="site-name">Taut Engineering</p>
-    <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
-  </header>
+<div class="error-content">
+  <div class="error-code">404</div>
+  <p class="error-message" id="error-message">Page not found.</p>
+  <p class="error-home"><a href="/">Return to tautengr.com</a></p>
+  <button class="error-reload" id="error-reload" onclick="nextMessage()">another one</button>
+</div>
 
-  <nav>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/sap2000-ai-automation/">AI + SAP2000</a></li>
-      <li><a href="/cande-buried-structures/">CANDE</a></li>
-      <li><a href="/solar-racking/">Solar</a></li>
-      <li><a href="/structural-engineering/">Structural</a></li>
-      <li><a href="/geotechnical-fea/">Geotechnical</a></li>
-      <li><a href="/projects/">Projects</a></li>
-      <li><a href="/#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <div class="error-wrap">
-    <div class="error-content">
-      <div class="error-code">404</div>
-      <div class="error-message" id="errorMsg"></div>
-      <div class="error-home"><a href="/">Return to solid ground</a></div>
-      <button class="error-reload" id="newMsg" title="Get a different error">&#8635; another opinion</button>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2026 Taut Engineering
-  </footer>
-
-  <script>
-    (function() {
-      var messages = [
-        "Load path not found.",
-        "This page has insufficient bearing capacity.",
-        "Exceeds allowable deflection.",
-        "Bearing capacity: 0 psf.",
-        "This page was not included in the scope of services.",
-        "This page has been condemned by the building department.",
-        "Convergence failure: unstable boundary conditions.",
-        "This page by others than TE."
-      ];
-
-      var last = -1;
-
-      function show() {
-        var idx;
-        do { idx = Math.floor(Math.random() * messages.length); } while (idx === last && messages.length > 1);
-        last = idx;
-        var el = document.getElementById('errorMsg');
-        el.style.opacity = 0;
-        setTimeout(function() {
-          el.textContent = messages[idx];
-          el.style.opacity = 1;
-        }, 200);
-      }
-
-      show();
-      document.getElementById('newMsg').addEventListener('click', show);
-    })();
-  </script>
-
-</body>
-</html>
+<script>
+var messages = [
+  "Load path not found.",
+  "This page has insufficient bearing capacity.",
+  "Deflection limit exceeded. Page has moved.",
+  "Section modulus insufficient for requested content.",
+  "Moment connection failed. Page rotated out of bounds.",
+  "Anchor bolt pullout. This page has left the building.",
+  "Factor of safety against page existing: 0.00.",
+  "Soil bearing pressure exceeded. Page has settled.",
+  "Unsupported span. No content within reach.",
+  "Shear failure along this URL."
+];
+var current = 0;
+function nextMessage() {
+  current = (current + 1) % messages.length;
+  var el = document.getElementById("error-message");
+  el.style.opacity = "0";
+  setTimeout(function() {
+    el.textContent = messages[current];
+    el.style.opacity = "1";
+  }, 300);
+}
+document.getElementById("error-message").textContent = messages[Math.floor(Math.random() * messages.length)];
+</script>

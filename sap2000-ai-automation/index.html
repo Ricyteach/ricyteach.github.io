@@ -1,70 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SAP2000 Automation and AI-Assisted Structural Analysis | Taut Engineering</title>
-  <meta name="description" content="Python tooling and AI-assisted modeling for SAP2000 structural analysis. Rick Teachey, PE builds, verifies, and documents structural models faster without compromising engineering judgment.">
-  <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
+---
+layout: default
+title: "AI-Assisted Analysis and SAP2000 Automation"
+description: "Python tooling and AI assistance for SAP2000 structural analysis. Rick Teachey, PE builds, verifies, and documents structural models faster without compromising engineering judgment."
+---
 
-  <header>
-    <div class="logo"><a href="/">Taut Engr</a></div>
-    <p class="site-name">Taut Engineering</p>
-    <div class="subtitle">Rick L. Teachey, Jr., P.E.</div>
-  </header>
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">Overview</span>
+  </div>
+  <div class="section-body">
+    <h1>AI-Assisted Analysis and SAP2000 Automation</h1>
+    <p>I use Python tooling and AI assistance to build, verify, and document structural models in SAP2000 faster than a manual workflow allows. The deliverable is the same: a licensed PE's analysis, reviewed and stamped. What changes is how much of the mechanical setup I can hand off to automation so the engineering judgment gets more attention.</p>
+  </div>
+</section>
 
-  <nav>
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">sap-composer</span>
+  </div>
+  <div class="section-body">
+    <h2>Building SAP2000 Models from Structured Descriptions</h2>
+    <p>I developed <strong>sap-composer</strong>, a Python tool that translates structured text descriptions of a structure into a complete SAP2000 model via the SAP2000 OAPI. A description file specifies geometry, section properties, material assignments, load patterns, and load cases. The tool builds the model, assigns all properties, and runs the analysis.</p>
+    <p>This approach is particularly useful for parametric studies: I can define a base structure in a description file and generate a series of variants programmatically, then post-process the results across all variants. What would take hours of GUI work runs in minutes.</p>
+    <p>All models are verified before use: I check reactions, deflections, and modal properties against hand calculations or simplified models, and I document any discrepancies.</p>
+  </div>
+</section>
+
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">Cross-checks</span>
+  </div>
+  <div class="section-body">
+    <h2>Independent SAP2000 Cross-Checks</h2>
+    <p>One of the most direct uses of automation is independent model verification. When a client provides a SAP2000 model (or a competing engineer's calculations), I can run a systematic cross-check: replicate the loading, compare results element by element, and flag discrepancies with documentation.</p>
+    <p>I've caught errors this way that include missing load combinations, incorrect release conditions, misapplied section properties, and incorrect seismic R factors. These are the kinds of errors that pass visual review of the model but show up clearly in a systematic numerical comparison.</p>
+  </div>
+</section>
+
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">AI assistance</span>
+  </div>
+  <div class="section-body">
+    <h2>AI in Context</h2>
+    <p>I use large language models as engineering assistants, not as engineers. Specific uses that add value without compromising judgment:</p>
     <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/sap2000-ai-automation/" aria-current="page">AI + SAP2000</a></li>
-      <li><a href="/cande-buried-structures/">CANDE</a></li>
-      <li><a href="/solar-racking/">Solar</a></li>
-      <li><a href="/structural-engineering/">Structural</a></li>
-      <li><a href="/geotechnical-fea/">Geotechnical</a></li>
-      <li><a href="/projects/">Projects</a></li>
-      <li><a href="/#contact">Contact</a></li>
+      <li>Drafting calculation narratives from structured notes, then reviewing and correcting for accuracy</li>
+      <li>Generating code from a specification I've written, then reviewing and testing the output</li>
+      <li>Summarizing code interpretation discussions, then verifying the summary against the source text</li>
+      <li>Formatting and organizing deliverable documentation</li>
     </ul>
-  </nav>
+    <p>I do not use AI to make engineering decisions, interpret test data, or produce numbers I have not independently verified. The PE seal means I've reviewed and stand behind the work.</p>
+  </div>
+</section>
 
-  <main>
-
-    <section>
-      <h1>SAP2000 Automation and AI-Assisted Structural Analysis</h1>
-      <p>I've been writing Python for structural engineering work for more than a decade, well before "AI tools" became a marketing category. What I build is practical: tools that reduce the mechanical overhead of structural analysis so more of the work hours go toward engineering judgment and less toward copy-paste and reformatting. The result is faster turnaround on complex analysis work without cutting corners on the engineering behind it.</p>
-    </section>
-
-    <section>
-      <h2>sap-composer: Building SAP2000 Models from Structured Descriptions</h2>
-      <p>SAP2000 is the standard tool for general structural finite element analysis, and it's powerful, but building a model from scratch is slow. I built sap-composer to generate SAP2000 .s2k input files from structured descriptions, round-trip them back into SAP2000, and produce documented, traceable model files. The practical result: a structural model that would take hours to set up manually can be ready to run in a fraction of the time, with inputs that are legible and reviewable by anyone with access to SAP2000.</p>
-      <p>This is especially useful for independent verification work, where I'm building a model to cross-check someone else's analysis rather than producing the primary design. It lets me run that check at a price and turnaround that makes sense for the scope, rather than billing for model-building time that shouldn't be the client's problem.</p>
-    </section>
-
-    <section>
-      <h2>Independent SAP2000 Cross-Checks</h2>
-      <p>One of the most useful things I do is independent structural verification: you have a design, an existing analysis, or a pre-engineered product, and you need an independent model to confirm the numbers hold. I've caught missing seismic analyses, incorrect response modification factors for cantilever column systems, and load-path errors that weren't apparent from reviewing the original output alone. Those aren't hypothetical scenarios; they're the actual findings from real peer review work.</p>
-      <p>The value isn't just error-catching. It's a documented, independent analysis that a client, an owner, or a building department can rely on as a second opinion with a PE seal behind it.</p>
-    </section>
-
-    <section>
-      <h2>Python Automation Across the Practice</h2>
-      <p>The same philosophy extends to other tools I use regularly. I built a custom input composer and output parser for LPILE, the lateral pile and drilled shaft analysis software, to handle parametric runs without manual re-entry. I built the ballast_calc library for rooftop PV ballast design, with a pluggable backend that handles both code-tabulated GCp coefficients and proprietary wind-tunnel datasets. Calculation engines for AISI S100 cold-formed steel and AASHTO LRFD buried pipe design follow the same pattern: transparent, step-by-step, engineer-reviewable output that a second engineer can follow without needing to trust a black box.</p>
-      <p>I also have a DXF drafting automation tool currently in development for generating scaled structural details and multi-sheet drawing sets directly from calculation output.</p>
-    </section>
-
-    <section>
-      <h2>AI Assistance in Context</h2>
-      <p>Large language models assist my practice in two concrete ways. First, as a model-building interface: describing a structure in structured natural language to generate a first-cut SAP2000 input file is faster than clicking through menus, and the resulting file is fully editable and auditable. Second, as a drafting tool: AI can assemble a calculation narrative or summary memo quickly, which I then review, correct, and verify against the actual engineering output before sealing.</p>
-      <p>The engineering judgment stays human throughout. I sign and stamp every deliverable, which means I've verified every number in it. AI-generated content that I haven't reviewed isn't part of a Taut Engineering deliverable. The value of AI assistance is speed on the assembly side of engineering work, not a substitute for the analysis side.</p>
-      <p>If you're looking for faster turnaround on structural analysis, independent verification of an existing design, or custom calculation tooling for a repetitive workflow, <a href="/#contact">get in touch</a>.</p>
-    </section>
-
-  </main>
-
-  <footer>
-    &copy; 2026 Taut Engineering
-  </footer>
-
-</body>
-</html>
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">Engage</span>
+  </div>
+  <div class="section-body">
+    <h2>Working with Me</h2>
+    <p>Automation-assisted work is available on any structural analysis project, including peer review, independent checks, and parametric design studies. If you have a SAP2000 model, a calculation package, or a structural problem that needs an independent licensed opinion, <a href="/#contact">contact me</a> with a description and I'll respond with scope and fee.</p>
+  </div>
+</section>

@@ -1,0 +1,13 @@
+<nav class="site-nav">
+  <ul>
+    <li><a href="/" {% if page.url == "/" %}aria-current="page"{% endif %}>Home</a></li>
+    <li><a href="/sap2000-ai-automation/" {% if page.url contains "sap2000" %}aria-current="page"{% endif %}>AI + SAP2000</a></li>
+    <li><a href="/cande-buried-structures/" {% if page.url contains "cande" %}aria-current="page"{% endif %}>CANDE</a></li>
+    <li><a href="/solar-racking/" {% if page.url contains "solar" %}aria-current="page"{% endif %}>Solar</a></li>
+    <li><a href="/structural-engineering/" {% if page.url contains "structural" %}aria-current="page"{% endif %}>Structural</a></li>
+    <li><a href="/geotechnical-fea/" {% if page.url contains "geotechnical" %}aria-current="page"{% endif %}>Geotechnical</a></li>
+    <li><a href="/projects/" {% if page.url contains "projects" %}aria-current="page"{% endif %}>Projects</a></li>
+    <li><a href="/about/" {% if page.url contains "about" %}aria-current="page"{% endif %}>About</a></li>
+    <li><a href="/#contact">Contact</a></li>
+  </ul>
+</nav>
