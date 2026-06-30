@@ -364,27 +364,12 @@ button[type="submit"]:hover { background: var(--accent); }
 
 .cred-value { color: var(--ink); line-height: 1.55; }
 
-/* Photo placeholder */
-.photo-placeholder {
+.headshot {
+  display: block;
   width: 148px;
-  height: 185px;
-  background: var(--rule-light);
-  border: 1px solid var(--rule);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: auto;
   margin-bottom: 1.5rem;
-}
-
-.photo-placeholder span {
-  font-family: var(--font-mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.07em;
-  text-transform: uppercase;
-  color: var(--mid);
-  text-align: center;
-  line-height: 1.6;
-  padding: 0 0.75rem;
+  border: 1px solid var(--rule-light);
 }
 
 /* --- Footer: title block --- */
