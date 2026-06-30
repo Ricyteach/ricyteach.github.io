@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Articles"
+description: "Technical writing on structural and geotechnical engineering, analysis software, and the tools I build. Rick Teachey, PE."
+---
+
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">Writing</span>
+  </div>
+  <div class="section-body">
+    <h1>Articles</h1>
+    <p>Technical writing on structural and geotechnical engineering, analysis software, and the tools I build.</p>
+  </div>
+</section>
+
+{% for post in site.posts %}
+<section class="site-section">
+  <div class="section-rail">
+    <time class="section-eyebrow" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+  </div>
+  <div class="section-body">
+    <div class="project-item" style="border-top: none; padding-top: 0;">
+      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      {% if post.description %}
+      <p>{{ post.description }}</p>
+      {% elsif post.excerpt %}
+      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      {% endif %}
+    </div>
+  </div>
+</section>
+{% endfor %}
+
+{% if site.posts.size == 0 %}
+<section class="site-section">
+  <div class="section-rail"></div>
+  <div class="section-body">
+    <p style="color: var(--mid);">No articles published yet.</p>
+  </div>
+</section>
+{% endif %}

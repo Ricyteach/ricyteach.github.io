@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<section class="site-section">
+  <div class="section-rail">
+    <time class="section-eyebrow" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %-d, %Y" }}</time>
+  </div>
+  <div class="section-body">
+    <h1>{{ page.title }}</h1>
+    <div class="article-body">
+      {{ content }}
+    </div>
+  </div>
+</section>
+
+<div class="article-back">
+  <a href="/articles/">&larr; All articles</a>
+</div>

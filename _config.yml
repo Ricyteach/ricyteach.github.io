@@ -3,6 +3,9 @@ description: "Structural and geotechnical engineering services. Rick Teachey, PE
 url: "https://tautengr.com"
 baseurl: ""
 
+future: false
+permalink: /articles/:title/
+
 author:
   name: "Rick L. Teachey, Jr., P.E."
   email: "rick@tautengr.com"
