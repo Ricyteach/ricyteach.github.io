@@ -6,7 +6,7 @@ related: []
 service_page: "/structural-engineering/"
 ---
 
-Here is a question that bothered me for years, and that I have never seen explained as plainly as it deserves. In the standard analysis of a reinforced concrete beam, we draw a rectangular compression block at the top, a single layer of steel in tension near the bottom, and we put the neutral axis right at the bottom of that compression block. Between the steel and the compression block is a tall region of cracked concrete that carries no stress at all. So why is the neutral axis obviously at the bottom of the compression block, and not somewhere up in that empty cracked region?
+Here is a question that bothered me for years, and that I have never seen explained as plainly as it deserves. In the standard analysis of a reinforced concrete beam, we draw a rectangular stress block at the top, a single layer of steel in tension near the bottom, and, in the gap between them, a tall region of cracked concrete that carries no stress at all. The neutral axis sits right at the top of that cracked region, just below where the compression block ends. So why is it clearly there, just past the edge of the active compression zone, and not somewhere lower in that empty space?
 
 If you have ever quietly wondered the same thing and just accepted the formula, this one is for you.
 
