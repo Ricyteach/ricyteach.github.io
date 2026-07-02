@@ -2,6 +2,10 @@
 layout: article
 title: "Cold-Formed Steel Is Not Just Thin Hot-Rolled Steel"
 description: "Cold-formed steel is governed by a different specification with a different worldview. The behaviors that have no counterpart in hot-rolled work and that will quietly wreck a design if you import the wrong habits."
+related:
+  - "distortional-buckling-dsm"
+  - "where-is-the-neutral-axis"
+service_page: "/structural-engineering/"
 ---
 
 The most common mistake I see engineers make with cold-formed steel is treating it like a small hot-rolled section: same instincts, same code reflexes, just thinner metal. It is a natural assumption and it is wrong, often in ways that are unconservative. Cold-formed steel is its own discipline, governed by its own specification, and a few of the differences will quietly wreck a design if you import hot-rolled habits.
@@ -30,4 +34,4 @@ Which edition of S100 you are on can change how you are required to handle these
 
 This is not abstract for me. I built a hat-section calculator that runs the AISI checks across a range of dimensions and loads, precisely so the local and distortional limit states get evaluated correctly every time instead of being eyeballed. Cold-formed sections are shaped the way they are, with lips and intermediate stiffeners, specifically to fight the buckling modes described above, and a tool that respects that does better work than instinct carried over from a different material.
 
-If you have cold-formed work, particularly in racking, framing, or any thin-gauge structure, it deserves an engineer who designs it as cold-formed steel, not as hot-rolled steel that went on a diet.
+If you have cold-formed work, particularly in racking, framing, or any thin-gauge structure, it deserves an engineer who designs it as cold-formed steel, not as hot-rolled steel that went on a diet. That is part of what I do under my [structural engineering services](/structural-engineering/).

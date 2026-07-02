@@ -20,6 +20,12 @@ social:
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-feed
+
+image: /assets/img/og-default.png
+
+twitter:
+  card: summary_large_image
 
 github:
   is_project_page: false

@@ -14,108 +14,25 @@ description: "Selected projects by Rick Teachey, PE: foundation design, structur
   </div>
 </section>
 
+{% assign by_category = site.data.projects | group_by: "category" %}
+{% for group in by_category %}
 <section class="site-section">
   <div class="section-rail">
-    <span class="section-eyebrow">Foundation</span>
+    <span class="section-eyebrow">{{ group.name }}</span>
   </div>
   <div class="section-body">
     <div class="project-list">
+      {% for project in group.items %}
       <div class="project-item">
-        <h3>Pylon Sign Drilled Shaft Foundations</h3>
-        <p>LPILE analysis with Reese weak-rock p-y model to justify reduced embedment into limestone. ACI 318 shear design with the size-effect provision. Stamped calculation package for permit.</p>
-        <div class="project-meta">Geotechnical / Foundation &middot; KY</div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.summary }}</p>
+        <div class="project-meta">{{ project.meta | replace: " - ", " &middot; " }}</div>
       </div>
-      <div class="project-item">
-        <h3>Canopy Foundation Design for Fueling Station</h3>
-        <p>Spread footing design for canopy columns in variable soil conditions. Coordinated with geotechnical report for bearing capacity and settlement criteria.</p>
-        <div class="project-meta">Foundation &middot; OH</div>
-      </div>
-      <div class="project-item">
-        <h3>Helical Pier Load Testing Evaluation</h3>
-        <p>Independent review of helical pier load test data for a residential addition in expansive clay. Evaluated installation torque vs. capacity correlations and provided written opinion on adequacy.</p>
-        <div class="project-meta">Geotechnical &middot; TX</div>
-      </div>
+      {% endfor %}
     </div>
-  </div>
-</section>
-
-<section class="site-section">
-  <div class="section-rail">
-    <span class="section-eyebrow">Structural steel</span>
-  </div>
-  <div class="section-body">
-    <div class="project-list">
-      <div class="project-item">
-        <h3>Freestanding Scoreboard Structure</h3>
-        <p>Site-specific adaptation of a manufacturer scoreboard structure to CBC wind and seismic loads. Drilled pier foundation design, Excel calculation package, and PE seal for permit.</p>
-        <div class="project-meta">Structural Steel &middot; CA</div>
-      </div>
-      <div class="project-item">
-        <h3>Mezzanine Structural Adequacy Review</h3>
-        <p>Structural review of an existing steel mezzanine for increased live load (warehouse to manufacturing). Checked beams, columns, and connections and documented deficiencies with remediation options.</p>
-        <div class="project-meta">Structural Steel &middot; OH</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-section">
-  <div class="section-rail">
-    <span class="section-eyebrow">Solar</span>
-  </div>
-  <div class="section-body">
-    <div class="project-list">
-      <div class="project-item">
-        <h3>Ballasted Rooftop PV Array, Commercial Building</h3>
-        <p>ASCE 7 wind analysis and ballast calculation for a 250kW rooftop array on a flat membrane roof. Roof framing checked for concentrated ballast loads. PE-stamped letter report for AHJ.</p>
-        <div class="project-meta">Solar Racking &middot; OH</div>
-      </div>
-      <div class="project-item">
-        <h3>Ground-Mount Solar Array, Agricultural Property</h3>
-        <p>Structural review of ground-mount racking for a 50kW agricultural solar installation. Wind and snow load calculations, driven post foundation design, and PE stamp for utility interconnect.</p>
-        <div class="project-meta">Solar Racking &middot; KY</div>
-      </div>
-      <div class="project-item">
-        <h3>Steel Solar Carport Structural Calculator</h3>
-        <p>Built a parameterized Excel calculator for steel solar carport structures that generates ASCE 7 wind and snow loads and sizes the primary structural members across multiple regional wind and snow markets. Includes IBC code references throughout, a corrected Case B wind load factor, a ledger beam designed as a double-overhanging member, and a self-supporting-panel check that flags when the modules contribute structurally. Maintained in parallel market and configuration versions to support repeatable carport design across jurisdictions.</p>
-        <div class="project-meta">Solar / Structural &middot; Various</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-section">
-  <div class="section-rail">
-    <span class="section-eyebrow">Automation</span>
-  </div>
-  <div class="section-body">
-    <div class="project-list">
-      <div class="project-item">
-        <h3>SAP2000 Model Generator for Parametric Canopy Studies</h3>
-        <p>Python tool to build and run SAP2000 models for canopy structures from a parameter file. Used to generate and post-process over 200 geometry variants for a manufacturer's design catalog.</p>
-        <div class="project-meta">Python / SAP2000 Automation</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="site-section">
-  <div class="section-rail">
-    <span class="section-eyebrow">Plan review</span>
-  </div>
-  <div class="section-body">
-    <div class="project-list">
-      <div class="project-item">
-        <h3>Cold-Formed Steel Framing Review, Multi-Family Residential</h3>
-        <p>Third-party structural review of CFS wall, floor, and roof framing for a 4-story wood and CFS hybrid building. Identified undersized jamb studs at large openings and an unbraced length error in a long-span floor joist.</p>
-        <div class="project-meta">Plan Review / CFS &middot; CA</div>
-      </div>
-      <div class="project-item">
-        <h3>PE Stamping, Structural Steel Shop Drawings</h3>
-        <p>Review and PE seal for structural steel connection shop drawings for multiple projects. Each review includes a written confirmation that the connections are adequate for the specified loads.</p>
-        <div class="project-meta">Plan Review / Structural &middot; Various</div>
-      </div>
-    </div>
+    {% if forloop.last %}
     <p style="margin-top: 1.25rem;"><a href="/#contact">Contact me about a project &rarr;</a></p>
+    {% endif %}
   </div>
 </section>
+{% endfor %}

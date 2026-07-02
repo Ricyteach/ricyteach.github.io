@@ -2,6 +2,10 @@
 layout: article
 title: "Then I Did It Again, With an Even Worse File Format"
 description: "LPile's input format is deliberately hostile: custom floating-point conventions, inconsistent field separators, and required typos. Teaching an AI to handle it anyway."
+related:
+  - "sap2000-ai-tool"
+  - "cande-editor"
+service_page: "/sap2000-ai-automation/"
 ---
 
 When I wrote about building [an AI tool that writes SAP2000 models](/articles/sap2000-ai-tool/), the central point was that a language model is good at producing structured text but does not know any particular program's input format, and that teaching it one reliably is hard, slow work that demands deep fluency in both the software and the AI. SAP2000 was not the only place I needed that. It was just the first one I wrote about.
@@ -22,4 +26,4 @@ And catching it is the whole job. The AI will confidently hand you a file that l
 
 ## The pattern, by now
 
-This is the third hostile format I have taught an AI to handle, after SAP2000 and the CANDE work behind my [buried-structure preprocessor](/articles/cande-editor/). At some point it stops being a series of one-off projects and becomes a capability: if your workflow is bottlenecked on some crusty legacy input format that everyone in your office dreads, there is a good chance it can be automated by someone who understands both the software and the AI well enough to do it safely. That describes a smaller group of people than you might think, and it is squarely the work I like.
+This is the third hostile format I have taught an AI to handle, after SAP2000 and the CANDE work behind my [buried-structure preprocessor](/articles/cande-editor/). At some point it stops being a series of one-off projects and becomes a capability: if your workflow is bottlenecked on some crusty legacy input format that everyone in your office dreads, there is a good chance it can be automated by someone who understands both the software and the AI well enough to do it safely. That describes a smaller group of people than you might think, and it is squarely the work I like. If it fits, the [analysis automation practice](/sap2000-ai-automation/) is the right place to start.

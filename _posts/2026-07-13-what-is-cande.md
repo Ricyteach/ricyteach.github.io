@@ -2,6 +2,8 @@
 layout: article
 title: "What CANDE Is, and When You Actually Need It"
 description: "Plain-English explanation of what CANDE is, when buried pipe and culvert work actually needs soil-structure interaction analysis, and what the program does and does not do."
+related: []
+service_page: "/cande-buried-structures/"
 ---
 
 If someone has told you a buried pipe or culvert needs a "CANDE analysis" and you are not sure what that means or whether you really need one, this is the plain-English version.
@@ -30,6 +32,6 @@ What it does not do is make judgment calls for you. The soil properties, the ins
 
 ## Who I am writing this for
 
-I do a fair amount of buried-structure work, and a lot of it comes from smaller outfits who have an occasional culvert or pipe problem and no reason to keep a soil-structure interaction specialist on staff. If that is you, this is exactly the kind of thing I am happy to take on, including the small jobs that larger firms tend to decline.
+I do a fair amount of [buried-structure work](/cande-buried-structures/), and a lot of it comes from smaller outfits who have an occasional culvert or pipe problem and no reason to keep a soil-structure interaction specialist on staff. If that is you, this is exactly the kind of thing I am happy to take on, including the small jobs that larger firms tend to decline.
 
 One last note, since it is relevant: the manual side of preparing these models, assigning materials and construction steps across a mesh, got tedious enough that I eventually built my own preprocessor to handle it. [That is a story for another article.](/articles/cande-editor/)

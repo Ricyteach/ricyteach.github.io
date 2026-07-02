@@ -2,6 +2,10 @@
 layout: article
 title: "I Built a CANDE Preprocessor with an AI, Before That Was Easy"
 description: "The story of building a CANDE mesh editor with AI in early 2025, when there was no agent that would read your repo and build a feature, and what it took to get it right."
+related:
+  - "what-is-cande"
+  - "sap2000-ai-tool"
+service_page: "/cande-buried-structures/"
 ---
 
 In a [previous article](/articles/what-is-cande/) I explained what CANDE is and why buried structures need soil-structure interaction analysis. Here is the part I left for later: the tool I built to make the tedious half of that work bearable.
@@ -26,4 +30,4 @@ It opens a CANDE input file and draws the mesh the way CANDE thinks about it, wi
 
 ## Why I am telling you this
 
-Two reasons. First, if you have buried-structure work, you are hiring someone who cares enough about getting CANDE right to have built his own tools around it. Second, this was the start of a habit. The same approach, an engineer directing an AI to build exactly the tool he needs and verifying every output, is how I later took on much harder formats and much bigger problems, including [a tool that builds full SAP2000 models from a plain-language description](/articles/sap2000-ai-tool/).
+Two reasons. First, if you have [buried-structure work](/cande-buried-structures/), you are hiring someone who cares enough about getting CANDE right to have built his own tools around it. Second, this was the start of a habit. The same approach, an engineer directing an AI to build exactly the tool he needs and verifying every output, is how I later took on much harder formats and much bigger problems, including [a tool that builds full SAP2000 models from a plain-language description](/articles/sap2000-ai-tool/).

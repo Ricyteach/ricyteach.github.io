@@ -2,6 +2,9 @@
 layout: article
 title: "The Buckling Mode Hot-Rolled Intuition Misses"
 description: "Cold-formed steel fails in three buckling modes. The third one, distortional buckling, has no hot-rolled analog and governs constantly in thin sections. What it is and how the Direct Strength Method handles it."
+related:
+  - "where-is-the-neutral-axis"
+service_page: "/structural-engineering/"
 ---
 
 If you were trained on hot-rolled steel, you carry a mental list of how a beam or column fails: it yields, or it buckles globally, by flexural buckling in a column or lateral-torsional buckling in a beam. Local buckling is on the list too, but for the compact wide-flange shapes that fill the AISC manual it usually does not govern, so it lives at the back of the mind. That list is complete enough for hot-rolled work. It is dangerously incomplete for cold-formed steel, because it is missing a mode that has no real hot-rolled analog and that governs constantly in thin sections: distortional buckling.
@@ -26,4 +29,4 @@ The Direct Strength Method changed this. It was introduced into AISI S100 in the
 
 Computing those elastic buckling loads by hand is not realistic for a real section, so DSM is paired with a finite strip analysis. The standard tool is CUFSM, and I run a Python implementation, pyCUFSM, which produces the signature curve that separates the local, distortional, and global modes and hands DSM the buckling stresses it needs. That coupling, finite strip elastic buckling feeding the Direct Strength Method, is what makes distortional buckling a routine, defensible check instead of a mode you hope does not bite you.
 
-If the [neutral-axis article](/articles/where-is-the-neutral-axis/) was about reading a section's behavior from first principles, this is the same habit applied to stability: know which mode you are actually fighting, and use a method that can see it.
+If the [neutral-axis article](/articles/where-is-the-neutral-axis/) was about reading a section's behavior from first principles, this is the same habit applied to stability: know which mode you are actually fighting, and use a method that can see it. Cold-formed steel design is a core part of my [structural engineering services](/structural-engineering/).

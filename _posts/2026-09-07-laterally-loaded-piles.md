@@ -2,6 +2,10 @@
 layout: article
 title: "How a Pile Resists a Sideways Shove"
 description: "Lateral load, not vertical load, controls most sign and pole foundations. Why hand calculations fall short, how LPILE and GROUP solve the nonlinear beam-on-springs problem, and when you need each."
+related:
+  - "teaching-ai-file-formats"
+  - "what-is-cande"
+service_page: "/geotechnical-fea/"
 ---
 
 Most people picture a pile or a drilled shaft as something that carries weight straight down: a column driven into the earth to reach firm material. That is half the job. The other half, and often the harder half to analyze, is resisting load that pushes sideways. A tall sign on a single shaft, a sound wall, a traffic signal, a light pole, a mast: these put relatively little vertical load on their foundation and a large horizontal force and overturning moment. The question is not "will it sink." It is "will it tip, and how far will it lean first."
@@ -24,4 +28,4 @@ A pylon sign on a single drilled shaft is the cleanest illustration. The wind lo
 
 ## The companion to a tool I already wrote about
 
-I have written before about [teaching an AI to generate LPILE input files reliably](/articles/teaching-ai-file-formats/). That article was about the file format, the plumbing. This one is the engineering reason you run LPILE in the first place. The automation makes the input painless. The judgment about p-y models, group effects, and whether the answer is physically believable is the part that still requires an engineer, and always will.
+I have written before about [teaching an AI to generate LPILE input files reliably](/articles/teaching-ai-file-formats/). That article was about the file format, the plumbing. This one is the engineering reason you run LPILE in the first place. The automation makes the input painless. The judgment about p-y models, group effects, and whether the answer is physically believable is the part that still requires an engineer, and always will. Lateral pile analysis is one part of a broader [geotechnical FEA practice](/geotechnical-fea/) that also covers soil-structure interaction for [buried structures](/articles/what-is-cande/) and continuum FEA for more complex site problems.

@@ -2,9 +2,12 @@
 layout: article
 title: "Beyond SAP2000: Building an AI Toolkit Across the Whole Deliverable"
 description: "An honest account of where the automation toolkit stands: what is working, what is in development, and how each piece fits into the deliverable pipeline."
+related:
+  - "sap2000-ai-tool"
+service_page: "/sap2000-ai-automation/"
 ---
 
-The SAP2000 model builder was the first tool I built this way, but it was never meant to be the only one. The same approach works anywhere the job is structured data and repetitive assembly carried out under engineering judgment, and that describes a surprising amount of what fills an engineer's week. So I have been building a family of skills across the rest of the deliverable pipeline. Here is where that stands, honestly, including the parts that are not finished.
+The [SAP2000 model builder](/articles/sap2000-ai-tool/) was the first tool I built this way, but it was never meant to be the only one. The same approach works anywhere the job is structured data and repetitive assembly carried out under engineering judgment, and that describes a surprising amount of what fills an engineer's week. So I have been building a family of skills across the rest of the deliverable pipeline. Here is where that stands, honestly, including the parts that are not finished.
 
 ## Drafting (in development)
 
@@ -24,4 +27,4 @@ Load combinations are exactly the kind of bookkeeping that is mind-numbing by ha
 
 Every one of these is taught the same painstaking way the SAP2000 tool was, and every one of them keeps a licensed engineer in the loop. The tools handle production. They do not handle judgment, and they never get the last word. What they buy back is time: the assembly, the drafting, the documentation, and the bookkeeping that were never really engineering get compressed, so more of the project goes to the part that actually is.
 
-That is the whole strategy. Not a gimmick, and not a promise that a machine will do your engineering. A deliberate, verified automation layer under the parts of the work that deserve to be automated, built and checked by someone who has to sign for the result.
+That is the whole strategy. Not a gimmick, and not a promise that a machine will do your engineering. A deliberate, verified automation layer under the parts of the work that deserve to be automated, built and checked by someone who has to sign for the result. That is what the [SAP2000 and analysis automation work](/sap2000-ai-automation/) is built around.

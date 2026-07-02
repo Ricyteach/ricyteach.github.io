@@ -1,0 +1,69 @@
+# Projects data - edit this file to add or update projects.
+# Fields: title, category, summary, meta, featured (true/false)
+# category values (used as section headings): Foundation, Structural steel, Solar, Automation, Plan review
+
+- title: "Pylon Sign Drilled Shaft Foundations"
+  category: "Foundation"
+  summary: "LPILE analysis with Reese weak-rock p-y model to justify reduced embedment into limestone. ACI 318 shear design with the size-effect provision. Stamped calculation package for permit."
+  meta: "Geotechnical / Foundation - KY"
+  featured: true
+
+- title: "Canopy Foundation Design for Fueling Station"
+  category: "Foundation"
+  summary: "Spread footing design for canopy columns in variable soil conditions. Coordinated with geotechnical report for bearing capacity and settlement criteria."
+  meta: "Foundation - OH"
+  featured: false
+
+- title: "Helical Pier Load Testing Evaluation"
+  category: "Foundation"
+  summary: "Independent review of helical pier load test data for a residential addition in expansive clay. Evaluated installation torque vs. capacity correlations and provided written opinion on adequacy."
+  meta: "Geotechnical - TX"
+  featured: false
+
+- title: "Freestanding Scoreboard Structure"
+  category: "Structural steel"
+  summary: "Site-specific adaptation of a manufacturer scoreboard structure to CBC wind and seismic loads. Drilled pier foundation design, Excel calculation package, and PE seal for permit."
+  meta: "Structural Steel - CA"
+  featured: true
+
+- title: "Mezzanine Structural Adequacy Review"
+  category: "Structural steel"
+  summary: "Structural review of an existing steel mezzanine for increased live load (warehouse to manufacturing). Checked beams, columns, and connections and documented deficiencies with remediation options."
+  meta: "Structural Steel - OH"
+  featured: false
+
+- title: "Ballasted Rooftop PV Array, Commercial Building"
+  category: "Solar"
+  summary: "ASCE 7 wind analysis and ballast calculation for a 250kW rooftop array on a flat membrane roof. Roof framing checked for concentrated ballast loads. PE-stamped letter report for AHJ."
+  meta: "Solar Racking - OH"
+  featured: false
+
+- title: "Ground-Mount Solar Array, Agricultural Property"
+  category: "Solar"
+  summary: "Structural review of ground-mount racking for a 50kW agricultural solar installation. Wind and snow load calculations, driven post foundation design, and PE stamp for utility interconnect."
+  meta: "Solar Racking - KY"
+  featured: false
+
+- title: "Steel Solar Carport Structural Calculator"
+  category: "Solar"
+  summary: "Built a parameterized Excel calculator for steel solar carport structures that generates ASCE 7 wind and snow loads and sizes the primary structural members across multiple regional wind and snow markets. Includes IBC code references throughout, a corrected Case B wind load factor, a ledger beam designed as a double-overhanging member, and a self-supporting-panel check that flags when the modules contribute structurally. Maintained in parallel market and configuration versions to support repeatable carport design across jurisdictions."
+  meta: "Solar / Structural - Various"
+  featured: true
+
+- title: "SAP2000 Model Generator for Parametric Canopy Studies"
+  category: "Automation"
+  summary: "Python tool to build and run SAP2000 models for canopy structures from a parameter file. Used to generate and post-process over 200 geometry variants for a manufacturer's design catalog."
+  meta: "Python / SAP2000 Automation"
+  featured: false
+
+- title: "Cold-Formed Steel Framing Review, Multi-Family Residential"
+  category: "Plan review"
+  summary: "Third-party structural review of CFS wall, floor, and roof framing for a 4-story wood and CFS hybrid building. Identified undersized jamb studs at large openings and an unbraced length error in a long-span floor joist."
+  meta: "Plan Review / CFS - CA"
+  featured: false
+
+- title: "PE Stamping, Structural Steel Shop Drawings"
+  category: "Plan review"
+  summary: "Review and PE seal for structural steel connection shop drawings for multiple projects. Each review includes a written confirmation that the connections are adequate for the specified loads."
+  meta: "Plan Review / Structural - Various"
+  featured: false

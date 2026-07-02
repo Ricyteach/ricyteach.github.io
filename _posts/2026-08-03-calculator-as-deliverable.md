@@ -2,6 +2,10 @@
 layout: article
 title: "Sometimes the Calculator Is the Deliverable"
 description: "Some clients need a tool that designs, not a single design. What a parametric structural calculator is, why it is harder to build than a one-off analysis, and when it is the right answer."
+related:
+  - "ai-toolkit"
+  - "sap2000-ai-tool"
+service_page: "/structural-engineering/"
 ---
 
 Most engineering engagements end with a stamped set of calculations for one specific project. But some of the most useful work I do does not produce a single design at all. It produces a tool that designs, that the client and their own customers use over and over without coming back to me each time.
@@ -24,4 +28,4 @@ Done right, the calculator carries the engineering, within a clearly defined env
 
 This is where the tooling I have built for myself compounds. The same ability to move quickly and reliably between a design description and a verified structural model, the thing behind my [SAP2000 and broader automation work](/articles/ai-toolkit/), is exactly what makes it practical to stand up and validate a parametric calculator across an entire product line. Running the underlying analysis a hundred ways to verify the calculator agrees with first-principles models at every corner of its input space is the kind of job that used to be prohibitively tedious. It is not anymore.
 
-If you sell a repeatable engineered product and you are paying for the same analysis again and again, a calculator might be the highest-leverage thing I can build for you. The deliverable is not a drawing. It is a tool your business keeps using.
+If you sell a repeatable engineered product and you are paying for the same analysis again and again, a calculator might be the highest-leverage thing I can build for you. The deliverable is not a drawing. It is a tool your business keeps using. That kind of work falls squarely under my [structural engineering services](/structural-engineering/).

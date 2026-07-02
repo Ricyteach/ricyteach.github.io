@@ -2,6 +2,11 @@
 layout: article
 title: "When Do You Actually Need PLAXIS?"
 description: "PLAXIS is powerful and frequently unnecessary. When established hand methods are the right answer, when genuine soil-structure interaction demands finite element analysis, and why the inputs matter more than the output."
+related:
+  - "what-is-cande"
+  - "ground-improvement"
+  - "laterally-loaded-piles"
+service_page: "/geotechnical-fea/"
 ---
 
 PLAXIS is a geotechnical finite element program, in 2D and 3D versions, that models soil as a continuous material with realistic stress-dependent behavior, together with the structures in and on it, the groundwater, and the sequence in which everything gets built. It is a powerful tool and I use it regularly. It is also frequently the wrong tool, and an honest engineer will tell you when you do not need it, because a full FEA on a problem that does not call for one is a way to spend your money making a simple answer look complicated.
@@ -24,4 +29,4 @@ The danger of a tool like this is that it will always produce a result, beautifu
 
 PLAXIS is general-purpose geotechnical FEA, which is a different thing from [CANDE](/articles/what-is-cande/), the specialized finite element tool for buried structures. They overlap in spirit and almost never in application, and part of scoping a job correctly is knowing which one the problem actually wants. It also pairs naturally with the geotechnical work I have written about elsewhere: you might model [improved ground](/articles/ground-improvement/) directly to predict its settlement, or run a continuum analysis to back up a [laterally loaded shaft](/articles/laterally-loaded-piles/) in unusual soil.
 
-If someone has told you your project needs finite element geotechnical analysis, it is worth confirming that it really does. Sometimes the answer is yes and it is exactly the right investment. Sometimes the answer is that a chart and an afternoon will do, and I would rather tell you that.
+If someone has told you your project needs finite element geotechnical analysis, it is worth confirming that it really does. Sometimes the answer is yes and it is exactly the right investment. Sometimes the answer is that a chart and an afternoon will do, and I would rather tell you that. Either way, this falls under my [geotechnical FEA services](/geotechnical-fea/).

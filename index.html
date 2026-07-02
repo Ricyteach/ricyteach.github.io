@@ -4,6 +4,7 @@ description: "Structural and geotechnical engineering services. Foundation desig
 ---
 
 <div class="site-hero">
+  <!-- MAINTENANCE (2026-07-01): "fifteen years" and "two years of AI" will go stale. Update both figures annually. -->
   <p class="hero-headline">With Taut you get fifteen years of engineering experience, two years of AI, and one engineer who brings both.</p>
 </div>
 
@@ -75,21 +76,14 @@ description: "Structural and geotechnical engineering services. Foundation desig
   </div>
   <div class="section-body">
     <div class="project-list">
+      {% assign featured = site.data.projects | where: "featured", true %}
+      {% for project in featured %}
       <div class="project-item">
-        <h3>Pylon Sign Drilled Shaft Foundations</h3>
-        <p>LPILE analysis with Reese weak-rock p-y model to justify reduced embedment into limestone. ACI 318 shear design with the size-effect provision.</p>
-        <div class="project-meta">Foundation / Geotechnical &middot; KY</div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.summary }}</p>
+        <div class="project-meta">{{ project.meta | replace: " - ", " &middot; " }}</div>
       </div>
-      <div class="project-item">
-        <h3>Steel Solar Carport Structural Calculator</h3>
-        <p>Parameterized Excel calculator for steel solar carport structures: ASCE 7 wind and snow loads, primary member sizing, and IBC code references across multiple regional markets and configurations.</p>
-        <div class="project-meta">Solar / Structural &middot; Various</div>
-      </div>
-      <div class="project-item">
-        <h3>Freestanding Scoreboard Structure</h3>
-        <p>CBC wind and seismic loads, drilled pier foundations, Excel calculation package. Sealed for permit.</p>
-        <div class="project-meta">Structural Steel &middot; CA</div>
-      </div>
+      {% endfor %}
     </div>
     <p style="margin-top: 1.25rem; font-size: 0.9rem;"><a href="/projects/">Full project list &rarr;</a></p>
   </div>

@@ -17,3 +17,33 @@ layout: default
 <div class="article-back">
   <a href="/articles/">&larr; All articles</a>
 </div>
+
+{% assign related_posts = "" | split: "" %}
+{% if page.related %}
+  {% for slug in page.related %}
+    {% assign found = site.posts | where_exp: "p", "p.slug == slug" | first %}
+    {% if found %}
+      {% assign related_posts = related_posts | push: found %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+
+{% if related_posts.size > 0 or page.service_page %}
+<section class="site-section">
+  <div class="section-rail">
+    <span class="section-eyebrow">Related</span>
+  </div>
+  <div class="section-body">
+    {% for rp in related_posts limit: 2 %}
+    <p><a href="{{ rp.url }}">{{ rp.title }}</a></p>
+    {% endfor %}
+    {% if page.service_page %}
+    {% if page.service_page contains "contact" %}
+    <p><a href="{{ page.service_page }}">Get in touch about a project like this &rarr;</a></p>
+    {% else %}
+    <p><a href="{{ page.service_page }}">My services in this area &rarr;</a></p>
+    {% endif %}
+    {% endif %}
+  </div>
+</section>
+{% endif %}

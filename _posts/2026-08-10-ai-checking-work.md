@@ -2,9 +2,13 @@
 layout: article
 title: "Using AI to Check an Engineer's Work, Not Do It"
 description: "The most reassuring AI application in engineering is also the simplest: using it to catch inconsistencies in a submittal package, not to design anything."
+related:
+  - "ai-toolkit"
+  - "sap2000-ai-tool"
+service_page: "/structural-engineering/"
 ---
 
-Most of the conversation about AI in engineering is about using it to produce something: a model, a calculation, a drawing. That is real, and I have written about the tools I built to do exactly that. But there is a second use that gets less attention and makes a lot of clients more comfortable, because the machine never touches the design. It only checks it.
+Most of the conversation about AI in engineering is about using it to produce something: a model, a calculation, a drawing. That is real, and I have written about [the tools I built](/articles/sap2000-ai-tool/) to do exactly that. But there is a second use that gets less attention and makes a lot of clients more comfortable, because the machine never touches the design. It only checks it.
 
 ## The job of catching mistakes
 
@@ -22,4 +26,4 @@ That framing matters. The tool is a second set of eyes that never gets tired and
 
 If the idea of AI in engineering makes you nervous, this is the application to look at first, because the risk profile is inverted from what people fear. The worry about AI is that it will confidently produce something wrong and a human will trust it. In a checking role, the AI is not producing the design at all. It is auditing a design a human already made, and a human reviews every flag it raises. The worst case is a false alarm that costs a few minutes. The upside is catching the quiet inconsistency that would otherwise have shipped.
 
-I use AI on both sides of my practice: to build, with [verified tooling and a licensed engineer on every result](/articles/ai-toolkit/), and to check, as a relentless second reader. The checking side is the one I would point a skeptical client to first, because it is the clearest case of the machine doing what it is good at and the engineer doing what only the engineer can.
+I use AI on both sides of my practice: to build, with [verified tooling and a licensed engineer on every result](/articles/ai-toolkit/), and to check, as a relentless second reader. The checking side is the one I would point a skeptical client to first, because it is the clearest case of the machine doing what it is good at and the engineer doing what only the engineer can. Both are part of the [structural engineering work](/structural-engineering/) I do.

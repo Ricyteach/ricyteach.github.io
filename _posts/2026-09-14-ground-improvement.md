@@ -2,6 +2,9 @@
 layout: article
 title: "When the Dirt Is Not Good Enough"
 description: "When a site's soil cannot support a shallow foundation, piles are not the only answer. Ground improvement methods and when they are more economical than driving through the bad material."
+related:
+  - "what-is-cande"
+service_page: "/geotechnical-fea/"
 ---
 
 Every so often a site hands you soil that cannot support what the owner wants to build on it. It is too soft, too compressible, too loose, or it would liquefy in an earthquake. When that happens you have three honest options: drive deep foundations down through the bad material to something competent, change the structure so it tolerates the soil, or improve the soil itself so an ordinary shallow foundation works. That third path is ground improvement, and it is often the most economical answer when people assume their only choice is expensive piles.
@@ -26,4 +29,4 @@ The key idea is that you are designing a composite: a volume of native soil rein
 
 A lot of ground improvement shows up on exactly the kinds of sites where I am already working below grade. If you have read about my [buried-structure and CANDE work](/articles/what-is-cande/), this is the adjacent problem: the buried structure cares about the soil around it, and sometimes the answer to a soft or settlement-prone site is to improve that soil rather than oversize everything bearing on it.
 
-If a soils report has come back worse than you hoped and someone has quoted you a forest of piles, it is worth a second opinion. Improving the ground is frequently cheaper, and figuring out whether it applies to your site is a short conversation.
+If a soils report has come back worse than you hoped and someone has quoted you a forest of piles, it is worth a second opinion. Improving the ground is frequently cheaper, and figuring out whether it applies to your site is a short conversation. Ground improvement design is part of my [geotechnical services](/geotechnical-fea/).
