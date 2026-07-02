@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-label="Three-panel diagram of a cracked reinforced concrete section. Left panel: rectangular cross-section with compression zone shaded above the neutral axis and cracked zone outlined below, steel bar at bottom. Middle panel: linear strain profile, a single straight line from compressive strain at top through zero at the neutral axis to tensile strain at the steel. Right panel: stress diagram with rectangular compression block above the neutral axis, blank cracked zone below, and tension force arrow at steel level.">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 290" role="img" aria-label="Three-panel diagram of a cracked reinforced concrete section. Left panel: rectangular cross-section with compression zone shaded above the neutral axis and cracked zone outlined below, steel bar at bottom. Middle panel: linear strain profile, a single straight line from compressive strain at top through zero at the neutral axis to tensile strain at the steel. Right panel: stress diagram with the equivalent rectangular block stopping at depth a above the neutral axis, the actual compression zone continuing to the neutral axis at depth c, the blank cracked zone below the neutral axis, and tension force arrow at steel level.">
   <style>
     .lbl { font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 11px; fill: #1A1C20; }
     .dim { font-family: "IBM Plex Mono", "Courier New", monospace; font-size: 10px; fill: #585E66; }
@@ -84,8 +84,10 @@
   <!-- Vertical reference axis -->
   <line x1="390" y1="22" x2="390" y2="272" stroke="#1A1C20" stroke-width="0.75"/>
 
-  <!-- Compression stress block (rectangular, Whitney) -->
-  <rect x="350" y="28" width="40" height="102" fill="#E4E3DD" stroke="#1A1C20" stroke-width="1.25"/>
+  <!-- Equivalent rectangular stress block (Whitney), depth a = 87 px, stops above neutral axis -->
+  <rect x="350" y="28" width="40" height="87" fill="#E4E3DD" stroke="#1A1C20" stroke-width="1.25"/>
+  <!-- Actual compression zone below block bottom, from y=115 to neutral axis y=130 -->
+  <rect x="350" y="115" width="40" height="15" fill="#F2F1EC" stroke="#585E66" stroke-width="0.75" stroke-dasharray="3 2"/>
 
   <!-- Neutral axis dashed guide -->
   <line x1="335" y1="130" x2="460" y2="130" stroke="#143C5E" stroke-width="1" stroke-dasharray="4 3"/>
@@ -101,6 +103,17 @@
   <!-- Cracked zone note -->
   <text x="430" y="192" class="dim">(no</text>
   <text x="430" y="206" class="dim">stress)</text>
+
+  <!-- Dimension a: top to equivalent block bottom (y=28 to y=115) -->
+  <line x1="428" y1="28" x2="436" y2="28" stroke="#1A1C20" stroke-width="0.75"/>
+  <line x1="428" y1="115" x2="436" y2="115" stroke="#1A1C20" stroke-width="0.75"/>
+  <line x1="432" y1="28" x2="432" y2="115" stroke="#1A1C20" stroke-width="0.75"/>
+  <text x="440" y="74" dominant-baseline="middle" class="lbl">a</text>
+  <!-- Dimension c: top to neutral axis (y=28 to y=130) -->
+  <line x1="452" y1="28" x2="460" y2="28" stroke="#1A1C20" stroke-width="0.75"/>
+  <line x1="452" y1="130" x2="460" y2="130" stroke="#1A1C20" stroke-width="0.75"/>
+  <line x1="456" y1="28" x2="456" y2="130" stroke="#1A1C20" stroke-width="0.75"/>
+  <text x="464" y="79" dominant-baseline="middle" class="lbl">c</text>
 
   <!-- ============================================================
        Neutral axis label (spans all three panels)
