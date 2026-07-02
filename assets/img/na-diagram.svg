@@ -57,20 +57,8 @@
   <!-- As label under steel bar -->
   <text x="90" y="278" text-anchor="middle" class="dim">As</text>
 
-  <!-- ============================================================
-       Panel 2 - Strain  (vertical axis x=258, y: 28-270)
-       Strain line: (223,28) -> (293,258)   [check: at y=130, x = 223 + 70/230*102 = 223+31.0 = 254 -- hmm]
-
-       Let me recalculate:
-         c = 102, d-c = 128, d = 230
-         We want the line to cross x=258 at y=130.
-         Let left_offset = a (εc side), right_offset = b (εs side).
-         From symmetry of ratios: a/b = c/(d-c) = 102/128 = 0.797
-         Choose b = 28, then a = 0.797*28 = 22.3 ~= 22
-         Top point:    x = 258-22 = 236, y = 28
-         Bottom point: x = 258+28 = 286, y = 258
-         Check at y=130: x = 236 + (286-236)/(258-28) * (130-28) = 236 + 50/230*102 = 236 + 22.17 = 258.2 ~= 258 ✓
-       ============================================================ -->
+  <!-- Panel 2 - Strain (vertical axis x=258, y: 28-270)
+       Strain line from (236,28) to (286,258) crosses axis x=258 at y=130. -->
 
   <!-- Vertical reference axis -->
   <line x1="258" y1="22" x2="258" y2="272" stroke="#1A1C20" stroke-width="0.75"/>
