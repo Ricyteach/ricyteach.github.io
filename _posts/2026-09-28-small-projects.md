@@ -10,7 +10,7 @@ If you have ever called an engineering firm with a small problem and been polite
 
 ## What "small" looks like
 
-The work I am talking about is the genuinely bounded task that still needs a licensed engineer. A stamped letter confirming a deck or a re-roof is adequate. A single connection check. A quick look at one beam in a remodel. A foundation for one sign. A deflection check on a single run of pipe. Plan review and a seal on a package someone else drew. These are real engineering tasks, they involve real professional responsibility, and they are too small to interest a firm with a business-development department and a project-management layer. For a solo practice with low overhead, a small job is simply a small job.
+The work I am talking about is the genuinely bounded task that still needs a licensed engineer. A stamped letter confirming a deck or a re-roof is adequate. A single connection check. A quick look at one beam in a remodel. A foundation for one sign. A deflection check on a single run of pipe. Plan review and a stamp on a package someone else drew. These are real engineering tasks, they involve real professional responsibility, and they are too small to interest a firm with a business-development department and a project-management layer. For a solo practice with low overhead, a small job is simply a small job.
 
 ## How an engagement starts, and roughly what it costs
 

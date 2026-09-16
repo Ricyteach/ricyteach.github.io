@@ -20,7 +20,7 @@ The gains from encoding that part are immediate. A combination set generated fro
 
 ## What the hard half looks like
 
-The difficulty is that a load combination is not fully determined by the code. It is determined by the code together with facts about the structure that the code cannot know.
+The difficulty is that a load combination is determined by the code together with facts about the structure that the code cannot know.
 
 Consider the treatment of dead load. The standard says that dead load takes a reduced factor when its effect is favorable. Deciding whether it is favorable in a given combination for a given member requires knowing what that combination is checking. For the footing of a moment frame column, the dead load is favorable in the combination checking uplift on the windward column and unfavorable in the combination checking bearing on the leeward one, and those are two different combinations applied to the same load case in the same model.
 

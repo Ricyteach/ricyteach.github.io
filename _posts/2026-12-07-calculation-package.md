@@ -8,7 +8,7 @@ related:
 service_page: "/structural-engineering/"
 ---
 
-A calculation package is not a record that the work was done. It is an argument, addressed to a reader, that the structure is adequate. The distinction sounds academic until a package comes back from a plan reviewer with comments that all amount to the same complaint, which is that the reviewer cannot tell what was assumed.
+A calculation package is an argument, addressed to a reader, that the structure is adequate. Treating it instead as a record that the work was done sounds like a harmless difference in emphasis, until a package comes back from a plan reviewer with comments that all amount to the same complaint, which is that the reviewer cannot tell what was assumed.
 
 I have written packages, reviewed other people's, and had my own returned with comments. The packages that survive review have a specific shape, and it has less to do with the quality of the engineering than people expect.
 

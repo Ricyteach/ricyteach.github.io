@@ -38,13 +38,13 @@ There is no internal signal. The only detection mechanism is an engineer looking
 
 Automation makes it more important rather than less. When a batch produces eighty results overnight, nobody reads eighty results carefully. So the habit has to become structural: check the physics on a sample from every batch, verify extracted numbers against what the program displays, and treat any batch where the sample disagrees as entirely untrustworthy rather than mostly fine. I described that discipline throughout this series because it is the thing that makes the rest of it usable.
 
-## Accepting responsibility for the seal
+## Taking responsibility for the result
 
 Then there is the part that is not a technical boundary at all.
 
-When I seal a drawing or a calculation package, I am stating that I am professionally responsible for it. That responsibility does not divide. There is no portion of it that belongs to a tool, no reduction for the parts that were generated, and no defense available to me that begins with an explanation of how the software works. If it is wrong, it is my error, in front of a licensing board and anyone else who asks.
+When I sign a drawing or a calculation package, I am stating that I am professionally responsible for it. That responsibility does not divide. There is no portion of it that belongs to a tool, no reduction for the parts that were generated, and no defense available to me that begins with an explanation of how the software works. If it is wrong, it is my error, in front of a licensing board and anyone else who asks.
 
-That is the correct arrangement, and it is the reason the tools are built the way they are. Every one of them is designed so that a human can check its output, because I have to be able to check its output. A tool whose results I could not independently verify would be useless to me regardless of how good it was, because I could not sign for it.
+That is the correct arrangement, and it is the reason the tools are built the way they are. Every one of them is designed so that a human can check its output, because I have to be able to check its output. A tool whose results I could not independently verify would be useless to me regardless of how good it was, since I would have no basis for putting my name on the answer.
 
 ## What you are actually hiring
 
@@ -52,7 +52,7 @@ The tooling has made the mechanical half of engineering considerably faster. The
 
 It has not touched the other half. Deciding what the structure is, choosing how to represent the soil, recognizing that an answer is wrong, knowing which limit state actually governs, and standing behind the result: none of that is faster than it was, and none of it is going to be.
 
-A client hiring this practice is hiring the second half. The first half is the reason I can take on the [smaller bounded work](/articles/small-projects/) that larger firms decline, and the reason a parametric study is affordable rather than prohibitive. But the deliverable is judgment, documented well enough that somebody else can [check it](/articles/calculation-package/), with a seal on it.
+A client hiring this practice is hiring the second half. The first half is the reason I can take on the [smaller bounded work](/articles/small-projects/) that larger firms decline, and the reason a parametric study is affordable rather than prohibitive. But the deliverable is judgment, documented well enough that somebody else can [check it](/articles/calculation-package/), and signed by the engineer who exercised it.
 
 That was the argument at the start of this series, when I wrote about the [first tool I built](/articles/ai-toolkit/), and after two dozen articles about tooling it is still the argument. The tools are worth having. They are not what you are paying for.
 

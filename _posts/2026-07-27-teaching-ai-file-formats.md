@@ -22,7 +22,7 @@ None of that is in any language model's general knowledge, and none of it is for
 
 People sometimes assume that once you have done this for one program, doing it for the next one is repetition. Every one of these formats has its own rules, conventions, and failure modes, and the only way to get a tool that produces valid files every time is to go through the same grinding loop I went through for SAP2000: generate, test against the real software, find precisely where it broke, correct, and repeat, for as long as it takes. What transfers from one format to the next is the method, along with the hard-won instinct for how these models fail so you can catch it.
 
-And catching it is the whole job. The model will confidently produce a file that looks perfectly reasonable and is wrong in a way that changes the answer. If you cannot read LPile output and tell when a result is physically implausible, you should not be automating its input. I can, which is why I trust the tool, and why every result it helps produce still goes through the same review and the same stamp any analysis of mine would. The automation builds the file. The engineer decides whether to believe it.
+And catching it is the whole job. The model will confidently produce a file that looks perfectly reasonable and is wrong in a way that changes the answer. If you cannot read LPile output and tell when a result is physically implausible, you should not be automating its input. I can, which is why I trust the tool, and why every result it helps produce goes through the same review as any other analysis of mine, with my name on the outcome. The automation builds the file. The engineer decides whether to believe it.
 
 ## The pattern, by now
 

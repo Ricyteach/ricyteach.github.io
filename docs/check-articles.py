@@ -21,6 +21,17 @@ FRONT_MATTER_KEYS = {"layout", "title", "description", "related", "service_page"
 EM_DASH = "\u2014"
 EN_DASH = "\u2013"
 
+PROHIBITED_PATTERNS = [
+    # The "the answer is not X, it is Y" shape, which the plain substring list
+    # does not catch when a sentence break separates the two halves.
+    (r"\bis not\b[^.!?]{0,80}[.!?]\s+It is\b", "contrast pair across a sentence break"),
+    # Seal and stamp used as a figure of speech rather than as the deliverable.
+    (r"\b(put|putting|puts)\b[^.!?]{0,20}\bseal\b", "seal used as a figure of speech"),
+    (r"\bthe seal\b", "seal used as a figure of speech"),
+    (r"\bseals the work\b", "seal used as a figure of speech"),
+    (r"\b(under|beneath) the [A-Z][\w ]* seal\b", "a firm does not hold a seal"),
+]
+
 PROHIBITED_SUBSTRINGS = [
     ", not ",
     "and it matters",
@@ -97,6 +108,12 @@ def main():
                 excerpt = body[max(0, match.start() - 40):match.start() + 40]
                 excerpt = " ".join(excerpt.split())
                 findings.append(f"{path}: prohibited {phrase!r}: ...{excerpt}...")
+
+        for pattern, label in PROHIBITED_PATTERNS:
+            for match in re.finditer(pattern, body):
+                excerpt = body[max(0, match.start() - 40):match.start() + 60]
+                excerpt = " ".join(excerpt.split())
+                findings.append(f"{path}: {label}: ...{excerpt}...")
 
         if re.search(r"n't\b", body):
             findings.append(f"{path}: contains a contraction")

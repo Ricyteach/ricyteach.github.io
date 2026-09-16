@@ -44,7 +44,7 @@ Balanced snow is the easy case and rarely the governing one. Drifted snow agains
 
 ## Seismic has its own arithmetic
 
-The seismic load in a combination is not simply the horizontal force from the analysis. It is that force multiplied by a redundancy factor that depends on how much of the lateral system would be lost if one element failed, combined with a vertical component proportional to the design acceleration and the dead load, applied both upward and downward.
+The seismic load in a combination is the horizontal force from the analysis multiplied by a redundancy factor, which depends on how much of the lateral system would be lost if one element failed, combined with a vertical component proportional to the design acceleration and the dead load, applied both upward and downward. Using the raw horizontal force from the analysis output understates both parts.
 
 Separately, certain elements are designed for an overstrength level force rather than the ordinary seismic force, because the intent is that those elements stay elastic while the ductile elements yield. Collectors, some connections, and anchorage to concrete frequently fall into that category. Using the ordinary seismic load where the overstrength load is required is a code compliance failure that no analysis output will flag.
 

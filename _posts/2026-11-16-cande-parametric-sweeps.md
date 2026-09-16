@@ -42,7 +42,7 @@ So the automation reads the text report, and the values it extracts are checked 
 
 ## What I do with the output
 
-The result of a sweep is not a single stamped number. It is a set of tables and a short written interpretation: here is the governing cover condition, here is the margin at the selected section, here is how much the answer depends on backfill quality, and here is the range of installation conditions under which the design remains adequate.
+The result of a sweep is a set of tables and a short written interpretation: here is the governing cover condition, here is the margin at the selected section, here is how much the answer depends on backfill quality, and here is the range of installation conditions under which the design remains adequate.
 
 That is a more useful document than a single analysis, and it is frequently cheaper than the sequence of separate analyses that gets commissioned when the cover height changes, then the gage changes, then someone asks what happens if the compaction comes in low. Doing all of it at once costs a batch running overnight.
 

@@ -14,7 +14,13 @@ Never invent facts. Do not invent project details, client names, dates, numbers,
 
 Do not name clients or facilities anywhere on the public site. Descriptions of past work stay generic.
 
-Every article involving artificial intelligence or automation keeps the same frame: a licensed professional engineer directs the tool, reviews every result, and seals the work.
+Every article involving artificial intelligence or automation keeps the same frame: a licensed professional engineer directs the tool, reviews every result, and is professionally responsible for what goes out.
+
+Avoid seal and stamp language as a figure of speech. Phrases such as putting a seal on something, responsibility for the seal, or work that is reviewed and stamped are worn out, and they stand in for a point that is better made directly. Write about professional responsibility, being the engineer of record, reviewing the work, or signing it.
+
+Where a stamp is the literal deliverable, name it plainly: a stamped letter report, a stamped letter of review, plan review and professional engineer stamping as a service. That is concrete and it stays.
+
+Only a licensed individual holds a seal. There is no Taut Engineering seal and no firm seal. Never write that work is stamped under Taut Engineering or issued under the practice's seal.
 
 ## Language rules
 

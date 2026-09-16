@@ -44,6 +44,6 @@ In the anchor design software I use, the design code and the unit system are sto
 
 Neither produces an error. Both produce a complete, professional-looking result that is wrong by a factor you would have to already suspect in order to notice. So the sweep generator asserts the code and the unit system on every single file it writes, and the first thing I check on any new batch is that one configuration, run through the automation, matches the same configuration built by hand in the interface. If those two disagree, nothing else in the batch is worth reading.
 
-That check costs ten minutes per batch and it is the reason I am willing to put my seal on numbers that came out of a script. The automation runs the arithmetic. Deciding that the arithmetic is answering the right question is still the engineer's job, and there is no version of this where that changes.
+That check costs ten minutes per batch and it is the reason I am willing to take professional responsibility for numbers that came out of a script. The automation runs the arithmetic. Deciding that the arithmetic is answering the right question is still the engineer's job, and there is no version of this where that changes.
 
 If you have a repeated anchorage condition, an equipment line that mounts to concrete in many configurations, or a design that keeps failing by a small margin, the range is usually more useful than the answer. That work sits inside my [analysis automation practice](/sap2000-ai-automation/).

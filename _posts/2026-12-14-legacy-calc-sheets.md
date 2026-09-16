@@ -20,7 +20,7 @@ What makes the old sheet valuable is not its arithmetic. The arithmetic is repro
 
 A rewrite discards that. The new version starts at zero validation, and the only way to establish that it agrees with the old one is to run both across a wide range of inputs and compare, which requires the ability to run the old one many times, which is the thing that seemed impossible and is the reason the rewrite was proposed.
 
-So the useful capability is not replacement. It is access.
+So the useful capability is access.
 
 ## Reading a sheet without opening it
 
