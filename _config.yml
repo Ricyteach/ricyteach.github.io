@@ -34,3 +34,5 @@ exclude:
   - readme.md
   - taut_project_portfolio.md
   - taut_capabilities_portfolio.md
+  - CLAUDE.md
+  - docs/

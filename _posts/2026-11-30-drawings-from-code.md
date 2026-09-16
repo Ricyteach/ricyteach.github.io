@@ -36,7 +36,7 @@ Layers and line weights have to follow a consistent standard, because a drawing 
 
 Text height interacts with scale in a way that catches everyone once. Text is specified at its height on the printed sheet, and the model is drawn at full size, so the text height in model space depends on the scale of the viewport it will be seen through. Get it wrong and the annotation is either microscopic or enormous, and the error is invisible until the sheet is plotted.
 
-Dimension styles carry the same problem, multiplied. Arrow size, extension line offset, text gap, and the overall scale factor all have to be set consistently with the plot scale, and a dimension style that looks correct in one viewport is wrong in the next one at a different scale.
+Dimension styles have the same problem, multiplied. Arrow size, extension line offset, text gap, and the overall scale factor all have to be set consistently with the plot scale, and a dimension style that looks correct in one viewport is wrong in the next one at a different scale.
 
 Paper space and viewports are where drawings from code most often go wrong, because the geometry lives at full size in model space and the sheet shows a scaled window onto it. Setting up the sheet, the title block, the viewport, and the scale correctly is the part that determines whether a plot is usable, and it is entirely separate from the part that draws the structure.
 

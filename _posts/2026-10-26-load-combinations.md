@@ -42,7 +42,7 @@ Directionality adds more cases. A rectangular structure has wind cases for each 
 
 Balanced snow is the easy case and rarely the governing one. Drifted snow against a parapet or an adjacent taller structure, unbalanced snow on a gable or a curved roof, and sliding snow from an upper roof onto a lower one all produce concentrated loads several times the balanced value over part of the span. A member designed for balanced snow alone can be substantially undersized at one end.
 
-## Seismic carries its own arithmetic
+## Seismic has its own arithmetic
 
 The seismic load in a combination is not simply the horizontal force from the analysis. It is that force multiplied by a redundancy factor that depends on how much of the lateral system would be lost if one element failed, combined with a vertical component proportional to the design acceleration and the dead load, applied both upward and downward.
 
