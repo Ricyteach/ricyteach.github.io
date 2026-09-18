@@ -121,6 +121,8 @@ SERVICE_PAGES = {
     "/solar-racking/",
     "/structural-engineering/",
     "/geotechnical-fea/",
+    "/shop-drawing-review/",
+    "/condition-assessment/",
 }
 
 

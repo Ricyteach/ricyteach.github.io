@@ -74,7 +74,7 @@ Publication dates are Mondays. The date in the file name and the date in the fro
 
 Internal links point backward in time only. An article may link to any article published before it. It may never link to an article with a later date, because that link returns a 404 until the target publishes. If a forward reference is useful, write it without a hyperlink, or add the link later as a retroactive edit listed in the manifest.
 
-Every article includes at least one link to the relevant service page. The service pages are `/sap2000-ai-automation/`, `/cande-buried-structures/`, `/solar-racking/`, `/structural-engineering/`, and `/geotechnical-fea/`. Prefer linking an existing phrase in the prose. Do not add a sentence whose only purpose is to hold a link.
+Every article includes at least one link to the relevant service page. The service pages are `/sap2000-ai-automation/`, `/cande-buried-structures/`, `/solar-racking/`, `/structural-engineering/`, `/geotechnical-fea/`, `/shop-drawing-review/`, and `/condition-assessment/`. Prefer linking an existing phrase in the prose. Do not add a sentence whose only purpose is to hold a link.
 
 Each article sets its `related` front matter list to at most two slugs, both dated earlier than the article itself.
 
