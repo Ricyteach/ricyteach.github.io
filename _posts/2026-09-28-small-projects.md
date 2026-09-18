@@ -14,7 +14,7 @@ The work I am talking about is the genuinely bounded task that still needs a lic
 
 ## How an engagement starts, and roughly what it costs
 
-I would rather be direct about this so you can decide before you even email. Engagements start with a short consultation at no charge, where we determine whether what you need is actually a small job or a larger one that has been described as small. If it is small and well defined, it gets a scoped, fixed proposal. There is a practical minimum, since even a quick stamped opinion involves real review and real liability, so the very smallest jobs are subject to a modest minimum fee. That minimum is low enough that most people with a genuine one-off question find it entirely reasonable, and a two-line email is usually enough for me to tell you quickly whether I am the right fit and roughly what it will cost.
+I will be direct about this so you can decide before you even email. Engagements start with a short consultation at no charge, where we determine whether what you need is actually a small job or a larger one that has been described as small. If it is small and well defined, it gets a scoped, fixed proposal. There is a practical minimum, since even a quick stamped opinion involves real review and real liability, so the very smallest jobs are subject to a modest minimum fee. That minimum is low enough that most people with a genuine one-off question find it entirely reasonable, and a two-line email is usually enough for me to tell you quickly whether I am the right fit and roughly what it will cost.
 
 ## Why I can do it when others cannot
 

@@ -42,6 +42,8 @@ These are absolute. Check each one before finishing.
 
 8. Do not abbreviate a reference to something already discussed. Restate the full name of the article, document, program, or person even when that makes the sentence longer.
 
+9. No "I would rather" constructions, in any variation, including "I'd rather" and "we would rather". Nobody speaks that way. Say what you will do, or state the preference directly.
+
 ## Design system
 
 The site has an implemented design system. Do not restyle it.

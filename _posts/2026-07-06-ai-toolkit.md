@@ -21,7 +21,7 @@ A calculation is not a deliverable until it is documented. The writeup, the assu
 
 ## Load combinations (in development)
 
-Load combinations are exactly the kind of bookkeeping that is tedious by hand and easy to get wrong: the full set of strength and service combinations across the governing code, applied correctly and tracked through the analysis. I am building a skill to generate and check them across the codes I work in. It is not finished yet, and I would rather tell you that than oversell it. Work on it continues.
+Load combinations are exactly the kind of bookkeeping that is tedious by hand and easy to get wrong: the full set of strength and service combinations across the governing code, applied correctly and tracked through the analysis. I am building a skill to generate and check them across the codes I work in. It is not finished yet, and I am telling you so plainly instead of overselling it. Work on it continues.
 
 ## What these tools have in common
 

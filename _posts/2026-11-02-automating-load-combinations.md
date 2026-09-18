@@ -44,7 +44,7 @@ There is a quieter benefit to that coupling. Because the combinations and the mo
 
 ## Where this currently stands
 
-I want to be accurate about status, because I described this as in development when I [wrote about the toolkit](/articles/ai-toolkit/) earlier this year and I would rather report progress than announce completion.
+I want to be accurate about status, because I described this as in development when I [wrote about the toolkit](/articles/ai-toolkit/) earlier this year. This is a progress report. The work is not finished.
 
 The code transcription half is working and in use. The declaration and favorability half works for the structure types I have needed it for, which means it has been exercised on real projects rather than on examples I invented for it, and it gets extended each time a structure presents a case it does not handle. That is the honest state of it. It is useful now and it is not finished, and those two things are frequently true at the same time.
 

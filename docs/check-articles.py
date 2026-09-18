@@ -33,6 +33,8 @@ PROHIBITED_PATTERNS = [
 ]
 
 PROHIBITED_SUBSTRINGS = [
+    "would rather",
+    "'d rather",
     ", not ",
     "and it matters",
     "and that matters",
