@@ -248,7 +248,7 @@ strong { font-weight: 600; }
 .license-track {
   display: flex;
   width: max-content;
-  animation: license-scroll 48s linear infinite;
+  animation: license-scroll 36s linear infinite;
 }
 
 .license-marquee:hover .license-track,
