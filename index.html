@@ -121,30 +121,19 @@ description: "Structural and geotechnical engineering services. Foundation desig
     <span class="section-eyebrow">05 / Licensure</span>
   </div>
   <div class="section-body">
-    <div class="license-row">
-      <div class="license-item">
-        <span class="state">OH</span>
-        <span class="state-name">Ohio</span>
-      </div>
-      <div class="license-item">
-        <span class="state">KY</span>
-        <span class="state-name">Kentucky</span>
-      </div>
-      <div class="license-item">
-        <span class="state">CA</span>
-        <span class="state-name">California</span>
-      </div>
-      <div class="license-item">
-        <span class="state">TX</span>
-        <span class="state-name">Texas</span>
-      </div>
-      <div class="license-item">
-        <span class="state">FL</span>
-        <span class="state-name">Florida</span>
-      </div>
-      <div class="license-item">
-        <span class="state">LA</span>
-        <span class="state-name">Louisiana</span>
+    <div class="license-marquee">
+      <div class="license-track">
+        {% for pass in (1..2) %}
+        <div class="license-group"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+          {% for lic in site.data.licenses %}
+          <div class="license-item">
+            <svg class="license-shape" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="{{ lic.outline }}"/></svg>
+            <span class="state">{{ lic.code }}</span>
+            <span class="state-name">{{ lic.name }}</span>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
       </div>
     </div>
     <p style="margin-top: 1rem; color: var(--mid); font-size: 0.9rem;">Additional state licensure available on request.</p>

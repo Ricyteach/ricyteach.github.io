@@ -238,14 +238,51 @@ strong { font-weight: 600; }
 }
 
 /* --- Licensure --- */
-.license-row {
-  display: flex;
-  gap: 2.5rem;
-  flex-wrap: wrap;
+.license-marquee {
   margin-top: 0.25rem;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
 
-.license-item { font-family: var(--font-mono); }
+.license-track {
+  display: flex;
+  width: max-content;
+  animation: license-scroll 48s linear infinite;
+}
+
+.license-marquee:hover .license-track,
+.license-marquee:focus-within .license-track { animation-play-state: paused; }
+
+.license-group { display: flex; }
+
+/* Each item owns its own trailing space, so two identical groups make the
+   halfway point an exact match and the loop has no visible seam. */
+@keyframes license-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.license-item {
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: 2.5rem;
+  font-family: var(--font-mono);
+}
+
+.license-shape {
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  width: 3.2rem;
+  height: 3.2rem;
+  transform: translate(-50%, -50%);
+  fill: var(--rule-light);
+  pointer-events: none;
+}
+
+.license-item .state,
+.license-item .state-name { position: relative; }
 
 .license-item .state {
   display: block;
@@ -588,7 +625,7 @@ body.error-page .site-main {
 
   .credential-row { grid-template-columns: 1fr; row-gap: 0.1rem; }
 
-  .license-row { gap: 1.5rem; }
+  .license-item { margin-right: 1.75rem; }
 
   .contact-form form { max-width: 100%; }
 }
@@ -596,6 +633,14 @@ body.error-page .site-main {
 /* --- Reduced motion --- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
+
+  /* Without this the global rule below would run the marquee at 0.01ms on an
+     infinite loop, which flickers. Fall back to the static wrapping row, and
+     drop the duplicate set so no state is announced or shown twice. */
+  .license-marquee { overflow: visible; -webkit-mask-image: none; mask-image: none; }
+  .license-track { animation: none !important; width: auto; flex-wrap: wrap; }
+  .license-group { flex-wrap: wrap; }
+  .license-group[aria-hidden="true"] { display: none; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
