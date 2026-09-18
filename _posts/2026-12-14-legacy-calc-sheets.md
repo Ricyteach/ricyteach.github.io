@@ -18,7 +18,7 @@ The engineer's instinct on encountering one of these is to rewrite it properly, 
 
 What makes the old sheet valuable is not its arithmetic. The arithmetic is reproducible in an afternoon. What makes it valuable is that it has been validated against reality over years of use. Every time it produced an answer that a project later confirmed, and every time someone caught a case where it needed a correction and made one, the sheet accumulated a kind of trust that a new implementation does not have and cannot be given quickly.
 
-A rewrite discards that. The new version starts at zero validation, and the only way to establish that it agrees with the old one is to run both across a wide range of inputs and compare, which requires the ability to run the old one many times, which is the thing that seemed impossible and is the reason the rewrite was proposed.
+A rewrite discards that. The new version starts at zero validation, and the only way to establish that it agrees with the old one is to run both across many inputs and compare, which requires the ability to run the old one many times, which is the thing that seemed impossible and is the reason the rewrite was proposed.
 
 So the useful capability is access.
 

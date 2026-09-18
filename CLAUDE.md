@@ -44,6 +44,8 @@ These are absolute. Check each one before finishing.
 
 9. No "I would rather" constructions, in any variation, including "I'd rather" and "we would rather". Nobody speaks that way. Say what you will do, or state the preference directly.
 
+10. No large language model tics. These are the words and sentence shapes that generated text reaches for constantly, and a reader who has seen a lot of it recognizes them immediately. The enforced list is in `docs/check-articles.py` and the reasoning and sources are in `docs/ai-tics.md`. The list covers metaphorical nouns such as tapestry, realm, and cornerstone; metaphorical verbs such as delve, navigate, foster, and underscore; inflated adjectives such as pivotal, seamless, and meticulous; verbs standing in for a plain "is", such as serves as and stands as; filler such as "it is important to note" and "when it comes to"; and transitions such as moreover and furthermore. It also covers the "not only X, but also Y" shape and a question posed only to answer it in the next sentence.
+
 ## Design system
 
 The site has an implemented design system. Do not restyle it.

@@ -30,6 +30,13 @@ PROHIBITED_PATTERNS = [
     (r"\bthe seal\b", "seal used as a figure of speech"),
     (r"\bseals the work\b", "seal used as a figure of speech"),
     (r"\b(under|beneath) the [A-Z][\w ]* seal\b", "a firm does not hold a seal"),
+    # "not only X, but also Y", a shape large language models produce constantly
+    (r"\bnot only\b[^.!?]{0,80}\bbut also\b", "not only, but also construction"),
+    # "It is not just X, it is Y", a variant of the prohibited contrast pair
+    (r"\bis not (just|merely|simply)\b[^.!?]{0,60}[,.]\s*(it|that) is\b",
+     "contrast pair using not just or not merely"),
+    # A question posed only to answer it in the next breath
+    (r"\?\s+(The answer is|Answer:|Simple\.|Yes\.|No\.)", "rhetorical question and answer"),
 ]
 
 PROHIBITED_SUBSTRINGS = [
@@ -50,13 +57,62 @@ PROHIBITED_SUBSTRINGS = [
     "bottleneck",
 ]
 
+# Large language models reach for the same small set of words and shapes. These
+# have no legitimate use in this site's writing, so they are failures.
+# Sources for the underlying lists are recorded in docs/ai-tics.md.
+AI_TIC_WORDS = [
+    # Metaphorical nouns borrowed to give weight to a flat subject
+    "tapestry", "realm", "mosaic", "symphony", "labyrinth", "beacon",
+    "cornerstone", "testament", "cacophony", "kaleidoscope", "odyssey",
+    "ecosystem", "crucible", "linchpin", "juggernaut", "watershed",
+    # Metaphorical verbs
+    "delve", "delves", "delving", "embark", "embarks", "embarking",
+    "navigate", "navigates", "navigating", "foster", "fosters", "fostering",
+    "elevate", "elevates", "elevating", "harness", "harnesses", "harnessing",
+    "streamline", "streamlines", "streamlining", "underscore", "underscores",
+    "underscoring", "showcase", "showcases", "showcasing", "unlock",
+    "unlocks", "unlocking", "usher", "ushers", "ushering", "illuminate",
+    "illuminates", "illuminating", "spearhead", "spearheads",
+    # Inflated adjectives
+    "pivotal", "paramount", "unwavering", "meticulous", "meticulously",
+    "commendable", "intricate", "intricacies", "seamless", "seamlessly",
+    "multifaceted", "myriad", "plethora", "transformative", "unparalleled",
+    "cutting-edge", "state-of-the-art", "game-changing", "groundbreaking",
+    "invaluable", "indispensable",
+    # Verbs used in place of a plain "is"
+    "serves as", "stands as", "represents a",
+    # Padding and filler
+    "it is important to note", "it is worth noting", "it is worth mentioning",
+    "it should be noted", "in today's", "in the realm of", "when it comes to",
+    "plays a crucial role", "plays a vital role", "plays a key role",
+    "a wide range of", "a wide array of", "navigating the complexities",
+    "in conclusion", "in summary", "that being said", "needless to say",
+    "at the end of the day", "the fact of the matter",
+    # Transitions no engineer writes by hand
+    "moreover", "furthermore", "additionally,", "notably,", "importantly,",
+    "interestingly,", "firstly", "secondly", "thirdly",
+    # Sales register
+    "unleash", "supercharge", "turbocharge", "revolutionize", "empower",
+    "leverage", "leveraging", "utilize", "utilizing", "utilization",
+    "robust and", "and robust",
+]
+
 # Words prohibited only in a non-literal sense. These are reported for a human
-# to judge rather than treated as automatic failures, because several of them
-# have ordinary literal uses in structural engineering, such as a member that
-# carries load.
+# to judge rather than treated as automatic failures, because every one of them
+# has an ordinary literal use in structural or geotechnical engineering. A
+# member carries load. Rock is bedrock. A structure resonates. A design is
+# robust. A seam has strength. Do not add a word here without checking that its
+# literal sense is genuinely used on this site.
 REVIEW_WORDS = [
     "carries", "carry", "holds", "flags", "flagged", "surfaces",
     "lands", "gates", "unpacks",
+    "bedrock", "resonate", "resonates", "robust", "landscape",
+    "foundation of", "cement", "amplify", "amplifies", "core", "key to",
+    "pillar", "pillars", "seismic shift", "fault line", "groundwork",
+    "scaffold", "scaffolding",
+    # Deliberately absent: anchor, bridge, and framework. All three are
+    # literal on this site often enough that flagging them produced nothing
+    # but noise, twenty six times for anchor alone in one article.
 ]
 
 SERVICE_PAGES = {
@@ -89,6 +145,45 @@ def front_matter(text):
     return fields, related, parts[2]
 
 
+def check_pages(findings, notes):
+    """Check the pages that are not posts: the homepage and every service page.
+
+    These were outside the checker until now, which meant the service pages,
+    the about page, and the homepage were never checked against the language
+    rules at all. Only the rules that apply to any prose are checked here.
+    Front matter schema, related lists, and backward-only links are article
+    conventions and do not apply.
+    """
+    pages = sorted(glob.glob("*.html") + glob.glob("*/index.html"))
+    for path in pages:
+        text = open(path, encoding="utf-8").read()
+
+        if EM_DASH in text or EN_DASH in text:
+            findings.append(f"{path}: contains an em dash or an en dash")
+
+        for phrase in PROHIBITED_SUBSTRINGS + AI_TIC_WORDS:
+            pattern = (
+                r"\b" + re.escape(phrase) + r"\b"
+                if phrase[-1].isalpha()
+                else re.escape(phrase)
+            )
+            for match in re.finditer(pattern, text, re.I):
+                excerpt = " ".join(text[max(0, match.start() - 40):match.start() + 40].split())
+                findings.append(f"{path}: prohibited {phrase!r}: ...{excerpt}...")
+
+        for pattern, label in PROHIBITED_PATTERNS:
+            for match in re.finditer(pattern, text):
+                excerpt = " ".join(text[max(0, match.start() - 40):match.start() + 60].split())
+                findings.append(f"{path}: {label}: ...{excerpt}...")
+
+        for word in REVIEW_WORDS:
+            for match in re.finditer(r"\b" + word + r"\b", text, re.I):
+                excerpt = " ".join(text[max(0, match.start() - 40):match.start() + 40].split())
+                notes.append(f"{path}: review {word!r}: ...{excerpt}...")
+
+    return len(pages)
+
+
 def main():
     posts = load_posts()
     findings = []
@@ -110,6 +205,17 @@ def main():
                 excerpt = body[max(0, match.start() - 40):match.start() + 40]
                 excerpt = " ".join(excerpt.split())
                 findings.append(f"{path}: prohibited {phrase!r}: ...{excerpt}...")
+
+        for phrase in AI_TIC_WORDS:
+            pattern = (
+                r"\b" + re.escape(phrase) + r"\b"
+                if phrase[-1].isalpha()
+                else re.escape(phrase)
+            )
+            for match in re.finditer(pattern, body, re.I):
+                excerpt = body[max(0, match.start() - 40):match.start() + 40]
+                excerpt = " ".join(excerpt.split())
+                findings.append(f"{path}: large language model tic {phrase!r}: ...{excerpt}...")
 
         for pattern, label in PROHIBITED_PATTERNS:
             for match in re.finditer(pattern, body):
@@ -169,12 +275,17 @@ def main():
         if "TKTK" in text:
             notes.append(f"{path}: contains a TKTK token")
 
+    page_count = check_pages(findings, notes)
+
     for note in notes:
         print("note:", note)
     for finding in findings:
         print("FINDING:", finding)
 
-    print(f"\nchecked {len(posts)} posts, {len(findings)} findings, {len(notes)} notes")
+    print(
+        f"\nchecked {len(posts)} posts and {page_count} pages, "
+        f"{len(findings)} findings, {len(notes)} notes"
+    )
     return 1 if findings else 0
 
 
