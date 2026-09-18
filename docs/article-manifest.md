@@ -2,7 +2,7 @@
 
 Publication order, slugs, dates, and link plan for the tautengr.com article series. Read `CLAUDE.md` in the repository root first. Every language rule in that file applies to every article in this manifest.
 
-The series publishes weekly on Mondays. Articles 1 through 14 are the first series, running from June 29 to September 28, 2026. Articles 15 through 27 are the second series, running from October 5 to December 28, 2026. Articles 28 through 40 are the third series, running from January 4 to March 29, 2027.
+The series publishes weekly on Mondays. Articles 1 through 14 are the first series, running from June 29 to September 28, 2026. Articles 15 through 29 are the second series, running from October 5, 2026 to January 11, 2027. The third series follows, beginning January 18, 2027. Its dates in the table below predate the two week shift and need renumbering before any of it is written.
 
 Verify the published state against `_posts` before writing anything. This manifest records the plan, and the repository records what actually happened.
 
@@ -33,25 +33,33 @@ All fourteen were edited in September 2026 to comply with the language rules in 
 
 ## Series two: written and scheduled
 
-All thirteen are written and in `_posts` with the dates below. Jekyll is configured with `future: false`, so each becomes visible on its date, brought online by the scheduled rebuild workflow in `.github/workflows/rebuild.yml`.
+All fifteen are written and in `_posts` with the dates below. Jekyll is configured with `future: false`, so each becomes visible on its date, brought online by the scheduled rebuild workflow in `.github/workflows/rebuild.yml`.
+
+Two articles were added to the front of this series in September 2026 and the original thirteen were shifted back two weeks. The two additions are the only subjects on the site with direct evidence of search demand, since both of the projects the owner identified as having found him through a search were of those types. Their relative order within the series is unchanged, so every internal link remains backward only.
+
+The alternation between engineering and tooling subjects is broken once, at the start, where the two additions run back to back. That was accepted deliberately. Interleaving them would have separated the companion pairs, such as the anchorage article and the article on automating anchor checks, and a forward link would have resulted.
 
 | Number | Title | Slug | Date | Side |
 |---|---|---|---|---|
-| 15 | When the Software Has No Scripting Interface | /articles/running-legacy-software/ | Oct 5, 2026 | Tooling |
-| 16 | Why Anchors Fail, and Which Failure Decides the Design | /articles/concrete-anchorage-failure-modes/ | Oct 12, 2026 | Engineering |
-| 17 | A Hundred Anchor Configurations Instead of One | /articles/automating-anchor-checks/ | Oct 19, 2026 | Tooling |
-| 18 | The Load Combination Is the Design | /articles/load-combinations/ | Oct 26, 2026 | Engineering |
-| 19 | Teaching a Program Which Loads Help and Which Hurt | /articles/automating-load-combinations/ | Nov 2, 2026 | Tooling |
-| 20 | Piles Get Weaker When You Put Them Close Together | /articles/pile-group-effects/ | Nov 9, 2026 | Engineering |
-| 21 | One Buried Structure Run Tells You Almost Nothing | /articles/cande-parametric-sweeps/ | Nov 16, 2026 | Tooling |
-| 22 | Does This Abutment Actually Need Seismic Detailing? | /articles/abutment-seismic-design/ | Nov 23, 2026 | Engineering |
-| 23 | Drawings Written in Python | /articles/drawings-from-code/ | Nov 30, 2026 | Tooling |
-| 24 | What a Calculation Package Is For | /articles/calculation-package/ | Dec 7, 2026 | Engineering |
-| 25 | The Calculation Sheet Nobody Wants to Change | /articles/legacy-calc-sheets/ | Dec 14, 2026 | Tooling |
-| 26 | What I Look For When I Review Somebody Else's Design | /articles/how-peer-review-works/ | Dec 21, 2026 | Engineering |
-| 27 | Where I Stop Automating | /articles/where-automation-stops/ | Dec 28, 2026 | Tooling |
+| 15 | What a Shop Drawing Review Actually Checks | /articles/shop-drawing-review/ | Oct 5, 2026 | Engineering |
+| 16 | Reading an Existing Structure Before You Analyze It | /articles/condition-assessment/ | Oct 12, 2026 | Engineering |
+| 17 | When the Software Has No Scripting Interface | /articles/running-legacy-software/ | Oct 19, 2026 | Tooling |
+| 18 | Why Anchors Fail, and Which Failure Decides the Design | /articles/concrete-anchorage-failure-modes/ | Oct 26, 2026 | Engineering |
+| 19 | A Hundred Anchor Configurations Instead of One | /articles/automating-anchor-checks/ | Nov 2, 2026 | Tooling |
+| 20 | The Load Combination Is the Design | /articles/load-combinations/ | Nov 9, 2026 | Engineering |
+| 21 | Teaching a Program Which Loads Help and Which Hurt | /articles/automating-load-combinations/ | Nov 16, 2026 | Tooling |
+| 22 | Piles Get Weaker When You Put Them Close Together | /articles/pile-group-effects/ | Nov 23, 2026 | Engineering |
+| 23 | One Buried Structure Run Tells You Almost Nothing | /articles/cande-parametric-sweeps/ | Nov 30, 2026 | Tooling |
+| 24 | Does This Abutment Actually Need Seismic Detailing? | /articles/abutment-seismic-design/ | Dec 7, 2026 | Engineering |
+| 25 | Drawings Written in Python | /articles/drawings-from-code/ | Dec 14, 2026 | Tooling |
+| 26 | What a Calculation Package Is For | /articles/calculation-package/ | Dec 21, 2026 | Engineering |
+| 27 | The Calculation Sheet Nobody Wants to Change | /articles/legacy-calc-sheets/ | Dec 28, 2026 | Tooling |
+| 28 | What I Look For When I Review Somebody Else's Design | /articles/how-peer-review-works/ | Jan 4, 2027 | Engineering |
+| 29 | Where I Stop Automating | /articles/where-automation-stops/ | Jan 11, 2027 | Tooling |
 
-Two working titles were improved while keeping their manifest slugs. Article 15 was "When the Software Has No API", which used an unexpanded initialism. Article 25 was "The Calculation Sheet Nobody Wants to Touch", which used a non-literal sense of a prohibited word.
+Two working titles were improved while keeping their manifest slugs. Article 17 was "When the Software Has No API", which used an unexpanded initialism. Article 27 was "The Calculation Sheet Nobody Wants to Touch", which used a non-literal sense of a prohibited word.
+
+The two September additions were originally numbered 34 and 38 in the third series. Their briefs have been removed from that series, and the third series now begins on January 18, 2027, after the second series ends on January 11.
 
 ## Series three: to be written
 
@@ -67,11 +75,9 @@ One deliberate correction is built into this series. The site has five service p
 | 31 | When a Two-Dimensional Frame Model Is Enough | /articles/two-dimensional-frame-models/ | Jan 25, 2027 | Tooling | /sap2000-ai-automation/ |
 | 32 | Ballast, Uplift, and the Roof Underneath | /articles/ballasted-rooftop-arrays/ | Feb 1, 2027 | Engineering | /solar-racking/ |
 | 33 | The Signature Curve | /articles/signature-curve/ | Feb 8, 2027 | Tooling | /structural-engineering/ |
-| 34 | What a Shop Drawing Review Actually Checks | /articles/shop-drawing-review/ | Feb 15, 2027 | Engineering | /structural-engineering/ |
 | 35 | Editing a Drawing You Did Not Draw | /articles/editing-existing-drawings/ | Feb 22, 2027 | Tooling | /structural-engineering/ |
 | 36 | Removing a Wall | /articles/removing-a-wall/ | Mar 1, 2027 | Engineering | /structural-engineering/ |
 | 37 | Assembling the Report Without Retyping the Numbers | /articles/report-assembly/ | Mar 8, 2027 | Tooling | /sap2000-ai-automation/ |
-| 38 | Reading an Existing Structure Before You Analyze It | /articles/condition-assessment/ | Mar 15, 2027 | Engineering | /structural-engineering/ |
 | 39 | What Makes a Tool Worth Keeping | /articles/what-makes-a-tool-worth-keeping/ | Mar 22, 2027 | Tooling | /sap2000-ai-automation/ |
 | 40 | Peer Review and Independent Engineering Review | /articles/independent-engineering-review/ | Mar 29, 2027 | Engineering | /structural-engineering/ |
 
@@ -113,11 +119,6 @@ The finite strip elastic buckling analysis behind article 9, treated on its own.
 
 Internal links: /articles/distortional-buckling-dsm/, /articles/cold-formed-steel/. Service page: /structural-engineering/.
 
-### 34. What a Shop Drawing Review Actually Checks
-
-A recurring engagement in the practice: reviewing a fabricator's shop drawings for netting, gates, railings, canopies, and similar assemblies. Explain the scope precisely, because it is widely misunderstood. The reviewing engineer checks conformance with the design intent and the governing standard, and does not redesign the assembly or assume responsibility for the fabricator's means and methods. Cover what gets found in practice: member sizes that differ from the design, connections detailed differently than assumed, missing bracing, welds that cannot be made in the position shown, and dimensions that do not close. Explain the response categories and what each one obligates.
-
-Internal links: /articles/how-peer-review-works/, /articles/calculation-package/. Service page: /structural-engineering/.
 
 ### 35. Editing a Drawing You Did Not Draw
 
@@ -137,11 +138,6 @@ Companion to article 24. The calculation package is the deliverable, and assembl
 
 Internal links: /articles/calculation-package/, /articles/ai-toolkit/. Service page: /sap2000-ai-automation/.
 
-### 38. Reading an Existing Structure Before You Analyze It
-
-Condition assessment as a discipline. Before an existing structure can be analyzed it has to be characterized, and the site visit is where that either happens or does not. Cover what to measure and what to photograph, how to distinguish distress that indicates a structural problem from cosmetic damage and from long completed movement, how to infer the original design basis from what is there, and when material testing is justified. Explain what a condition assessment report should conclude, which is a description of the structure adequate to support a later analysis, together with an explicit statement of what could not be observed.
-
-Internal links: /articles/how-peer-review-works/, /articles/calculation-package/. Service page: /structural-engineering/.
 
 ### 39. What Makes a Tool Worth Keeping
 

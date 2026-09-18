@@ -30,6 +30,10 @@ PROHIBITED_PATTERNS = [
     (r"\bthe seal\b", "seal used as a figure of speech"),
     (r"\bseals the work\b", "seal used as a figure of speech"),
     (r"\b(under|beneath) the [A-Z][\w ]* seal\b", "a firm does not hold a seal"),
+    # Language rule nine. The negative lookahead keeps the ordinary English
+    # "does it as a fabricator would rather than as an analyst would" from
+    # matching, since there the word than follows rather immediately.
+    (r"\b(would|'d) rather(?! than)\b", "prohibited I would rather construction"),
     # "not only X, but also Y", a shape large language models produce constantly
     (r"\bnot only\b[^.!?]{0,80}\bbut also\b", "not only, but also construction"),
     # "It is not just X, it is Y", a variant of the prohibited contrast pair
@@ -40,8 +44,6 @@ PROHIBITED_PATTERNS = [
 ]
 
 PROHIBITED_SUBSTRINGS = [
-    "would rather",
-    "'d rather",
     ", not ",
     "and it matters",
     "and that matters",
