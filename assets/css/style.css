@@ -128,7 +128,7 @@ strong { font-weight: 600; }
 /* --- Two-column section grid --- */
 .site-section {
   display: grid;
-  grid-template-columns: var(--rail) 1fr;
+  grid-template-columns: var(--rail) minmax(0, 1fr);
   column-gap: var(--col-gap);
   padding: 2.5rem 0;
   border-top: 1px solid var(--rule-light);
@@ -238,30 +238,38 @@ strong { font-weight: 600; }
 }
 
 /* --- Licensure --- */
-.license-marquee {
-  margin-top: 0.25rem;
-  overflow: hidden;
+/* Default is a plain wrapping row, which is what shows if the script never
+   runs. assets/js/licensure-marquee.js adds is-marquee to switch it to the
+   single scrolling line, and drives the scrolling itself. */
+.license-marquee { margin-top: 0.25rem; }
+
+.license-track { display: flex; flex-wrap: wrap; }
+
+.license-group { display: flex; flex-wrap: wrap; }
+
+.license-group[aria-hidden="true"] { display: none; }
+
+.license-marquee.is-marquee {
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  cursor: grab;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
   mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
 
-.license-track {
-  display: flex;
-  width: max-content;
-  animation: license-scroll 36s linear infinite;
-}
+.license-marquee.is-marquee::-webkit-scrollbar { display: none; }
 
-.license-marquee:hover .license-track,
-.license-marquee:focus-within .license-track { animation-play-state: paused; }
+.license-marquee.is-marquee.is-dragging { cursor: grabbing; }
 
-.license-group { display: flex; }
+.license-marquee.is-marquee .license-track { flex-wrap: nowrap; width: max-content; }
 
-/* Each item owns its own trailing space, so two identical groups make the
+.license-marquee.is-marquee .license-group { flex-wrap: nowrap; display: flex; }
+
+/* Each item owns its trailing space, so the two identical groups make the
    halfway point an exact match and the loop has no visible seam. */
-@keyframes license-scroll {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
 
 .license-item {
   position: relative;
@@ -615,7 +623,7 @@ body.error-page .site-main {
   .site-nav ul { gap: 1rem; }
 
   .site-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     row-gap: 0.35rem;
   }
 
@@ -634,13 +642,18 @@ body.error-page .site-main {
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 
-  /* Without this the global rule below would run the marquee at 0.01ms on an
-     infinite loop, which flickers. Fall back to the static wrapping row, and
-     drop the duplicate set so no state is announced or shown twice. */
-  .license-marquee { overflow: visible; -webkit-mask-image: none; mask-image: none; }
-  .license-track { animation: none !important; width: auto; flex-wrap: wrap; }
-  .license-group { flex-wrap: wrap; }
-  .license-group[aria-hidden="true"] { display: none; }
+  /* The script checks this query and leaves the drift switched off, but the
+     class may already be applied, so undo it here as well and fall back to
+     the plain wrapping row. */
+  .license-marquee.is-marquee {
+    overflow: visible;
+    cursor: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+  }
+  .license-marquee.is-marquee .license-track { flex-wrap: wrap; width: auto; }
+  .license-marquee.is-marquee .license-group { flex-wrap: wrap; }
+  .license-marquee.is-marquee .license-group[aria-hidden="true"] { display: none; }
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;

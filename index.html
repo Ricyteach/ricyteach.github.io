@@ -123,8 +123,7 @@ description: "Structural and geotechnical engineering services. Foundation desig
   <div class="section-body">
     <div class="license-marquee">
       <div class="license-track">
-        {% for pass in (1..2) %}
-        <div class="license-group"{% if pass == 2 %} aria-hidden="true"{% endif %}>
+        <div class="license-group">
           {% for lic in site.data.licenses %}
           <div class="license-item">
             <svg class="license-shape" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path d="{{ lic.outline }}"/></svg>
@@ -133,7 +132,6 @@ description: "Structural and geotechnical engineering services. Foundation desig
           </div>
           {% endfor %}
         </div>
-        {% endfor %}
       </div>
     </div>
     <p style="margin-top: 1rem; color: var(--mid); font-size: 0.9rem;">Additional state licensure available on request.</p>
