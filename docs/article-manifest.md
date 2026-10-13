@@ -50,7 +50,7 @@ Articles 1 through 14 were edited in September 2026 to comply with the language 
 
 ## Schedule
 
-Status values: **Written** (in `_posts` with this date), **To write** (a brief exists below), **New brief** (added in the October 2026 revision, brief below).
+Status values: **Written** (in `_posts` with this date), **To write** (a brief exists below but no article). New subjects added to the schedule start as To write.
 
 Audience: **Owners** (property owners, buyers, agents, investors, contractors), **Specialty** (fabricators and engineered product companies), **Engineers** (engineering subjects for a technical reader), **Tooling** (analysis automation).
 
@@ -58,42 +58,42 @@ Jekyll is configured with `future: false`, so each written article becomes visib
 
 | Number | Title | Slug | Date | Audience | Service page | Status |
 |---|---|---|---|---|---|---|
-| 17 | Bowing Basement Walls: Causes, Measurement, and Repair | /articles/bowing-basement-walls/ | Oct 19, 2026 | Owners | /condition-assessment/ | New brief |
+| 17 | Bowing Basement Walls: Causes, Measurement, and Repair | /articles/bowing-basement-walls/ | Oct 19, 2026 | Owners | /condition-assessment/ | Written |
 | 18 | Why Anchors Fail, and Which Failure Decides the Design | /articles/concrete-anchorage-failure-modes/ | Oct 26, 2026 | Specialty | /structural-engineering/ | Written |
-| 19 | Reading Cracks in Brick and Block Walls | /articles/masonry-cracks/ | Nov 2, 2026 | Owners | /condition-assessment/ | New brief |
+| 19 | Reading Cracks in Brick and Block Walls | /articles/masonry-cracks/ | Nov 2, 2026 | Owners | /condition-assessment/ | Written |
 | 20 | When the Software Has No Scripting Interface | /articles/running-legacy-software/ | Nov 9, 2026 | Tooling | /sap2000-ai-automation/ | Written |
-| 21 | Removing a Wall | /articles/removing-a-wall/ | Nov 16, 2026 | Owners | /structural-engineering/ | To write |
+| 21 | Removing a Wall | /articles/removing-a-wall/ | Nov 16, 2026 | Owners | /structural-engineering/ | Written |
 | 22 | The Load Combination Is the Design | /articles/load-combinations/ | Nov 23, 2026 | Engineers | /structural-engineering/ | Written |
-| 23 | Rot, Insects, and Water: Evaluating Damaged Wood Framing | /articles/damaged-wood-framing/ | Nov 30, 2026 | Owners | /condition-assessment/ | New brief |
+| 23 | Rot, Insects, and Water: Evaluating Damaged Wood Framing | /articles/damaged-wood-framing/ | Nov 30, 2026 | Owners | /condition-assessment/ | Written |
 | 24 | A Hundred Anchor Configurations Instead of One | /articles/automating-anchor-checks/ | Dec 7, 2026 | Tooling | /sap2000-ai-automation/ | Written |
-| 25 | Wind on Structures That Are Mostly Air | /articles/wind-open-structures/ | Dec 14, 2026 | Specialty | /solar-racking/ | To write |
+| 25 | Wind on Structures That Are Mostly Air | /articles/wind-open-structures/ | Dec 14, 2026 | Specialty | /solar-racking/ | Written |
 | 26 | Teaching a Program Which Loads Help and Which Hurt | /articles/automating-load-combinations/ | Dec 21, 2026 | Tooling | /sap2000-ai-automation/ | Written |
 | 27 | What a Calculation Package Is For | /articles/calculation-package/ | Dec 28, 2026 | Engineers | /structural-engineering/ | Written |
-| 28 | When a Report Says to Call a Structural Engineer | /articles/call-a-structural-engineer/ | Jan 4, 2027 | Owners | /condition-assessment/ | New brief |
+| 28 | When a Report Says to Call a Structural Engineer | /articles/call-a-structural-engineer/ | Jan 4, 2027 | Owners | /condition-assessment/ | Written |
 | 29 | Drawings Written in Python | /articles/drawings-from-code/ | Jan 11, 2027 | Tooling | /structural-engineering/ | Written |
-| 30 | Underpinning a House with Helical Piles | /articles/helical-piles/ | Jan 18, 2027 | Owners | /geotechnical-fea/ | To write |
+| 30 | Underpinning a House with Helical Piles | /articles/helical-piles/ | Jan 18, 2027 | Owners | /geotechnical-fea/ | Written |
 | 31 | Piles Get Weaker When You Put Them Close Together | /articles/pile-group-effects/ | Jan 25, 2027 | Engineers | /geotechnical-fea/ | Written |
-| 32 | Solar Panels on an Existing Roof: What the Structural Letter Checks | /articles/rooftop-solar-letter/ | Feb 1, 2027 | Specialty | /solar-racking/ | New brief |
-| 33 | One Calculator for an Entire Product Line | /articles/product-line-calculator/ | Feb 8, 2027 | Tooling | /solar-racking/ | To write |
-| 34 | After a Fire: Evaluating Fire-Damaged Framing | /articles/fire-damaged-framing/ | Feb 15, 2027 | Owners | /condition-assessment/ | New brief |
+| 32 | Solar Panels on an Existing Roof: What the Structural Letter Checks | /articles/rooftop-solar-letter/ | Feb 1, 2027 | Specialty | /solar-racking/ | Written |
+| 33 | One Calculator for an Entire Product Line | /articles/product-line-calculator/ | Feb 8, 2027 | Tooling | /solar-racking/ | Written |
+| 34 | After a Fire: Evaluating Fire-Damaged Framing | /articles/fire-damaged-framing/ | Feb 15, 2027 | Owners | /condition-assessment/ | Written |
 | 35 | The Calculation Sheet Nobody Wants to Change | /articles/legacy-calc-sheets/ | Feb 22, 2027 | Tooling | /sap2000-ai-automation/ | Written |
 | 36 | What I Look For When I Review Somebody Else's Design | /articles/how-peer-review-works/ | Mar 1, 2027 | Engineers | /structural-engineering/ | Written |
-| 37 | Post Frame Buildings Are Engineered Differently | /articles/post-frame-buildings/ | Mar 8, 2027 | Owners | /structural-engineering/ | New brief |
+| 37 | Post Frame Buildings Are Engineered Differently | /articles/post-frame-buildings/ | Mar 8, 2027 | Owners | /structural-engineering/ | Written |
 | 38 | One Buried Structure Run Tells You Almost Nothing | /articles/cande-parametric-sweeps/ | Mar 15, 2027 | Tooling | /cande-buried-structures/ | Written |
-| 39 | Tall Poles and Light Nets: Sports Netting Structures | /articles/sports-netting-structures/ | Mar 22, 2027 | Specialty | /shop-drawing-review/ | New brief |
+| 39 | Tall Poles and Light Nets: Sports Netting Structures | /articles/sports-netting-structures/ | Mar 22, 2027 | Specialty | /shop-drawing-review/ | Written |
 | 40 | Does This Abutment Actually Need Seismic Detailing? | /articles/abutment-seismic-design/ | Mar 29, 2027 | Engineers | /geotechnical-fea/ | Written |
-| 41 | Ballast, Uplift, and the Roof Underneath | /articles/ballasted-rooftop-arrays/ | Apr 5, 2027 | Specialty | /solar-racking/ | To write |
-| 42 | When a Two-Dimensional Frame Model Is Enough | /articles/two-dimensional-frame-models/ | Apr 12, 2027 | Tooling | /sap2000-ai-automation/ | To write |
-| 43 | Foundations for Tanks | /articles/tank-foundations/ | Apr 19, 2027 | Specialty | /structural-engineering/ | New brief |
-| 44 | The Signature Curve | /articles/signature-curve/ | Apr 26, 2027 | Engineers | /structural-engineering/ | To write |
-| 45 | Why the Floor Slopes | /articles/sagging-floors/ | May 3, 2027 | Owners | /condition-assessment/ | New brief |
-| 46 | Editing a Drawing You Did Not Draw | /articles/editing-existing-drawings/ | May 10, 2027 | Tooling | /structural-engineering/ | To write |
-| 47 | Peer Review and Independent Engineering Review | /articles/independent-engineering-review/ | May 17, 2027 | Engineers | /structural-engineering/ | To write |
-| 48 | Assembling the Report Without Retyping the Numbers | /articles/report-assembly/ | May 24, 2027 | Tooling | /sap2000-ai-automation/ | To write |
-| 49 | What Makes a Tool Worth Keeping | /articles/what-makes-a-tool-worth-keeping/ | May 31, 2027 | Tooling | /sap2000-ai-automation/ | To write |
+| 41 | Ballast, Uplift, and the Roof Underneath | /articles/ballasted-rooftop-arrays/ | Apr 5, 2027 | Specialty | /solar-racking/ | Written |
+| 42 | When a Two-Dimensional Frame Model Is Enough | /articles/two-dimensional-frame-models/ | Apr 12, 2027 | Tooling | /sap2000-ai-automation/ | Written |
+| 43 | Foundations for Tanks | /articles/tank-foundations/ | Apr 19, 2027 | Specialty | /structural-engineering/ | Written |
+| 44 | The Signature Curve | /articles/signature-curve/ | Apr 26, 2027 | Engineers | /structural-engineering/ | Written |
+| 45 | Why the Floor Slopes | /articles/sagging-floors/ | May 3, 2027 | Owners | /condition-assessment/ | Written |
+| 46 | Editing a Drawing You Did Not Draw | /articles/editing-existing-drawings/ | May 10, 2027 | Tooling | /structural-engineering/ | Written |
+| 47 | Peer Review and Independent Engineering Review | /articles/independent-engineering-review/ | May 17, 2027 | Engineers | /structural-engineering/ | Written |
+| 48 | Assembling the Report Without Retyping the Numbers | /articles/report-assembly/ | May 24, 2027 | Tooling | /sap2000-ai-automation/ | Written |
+| 49 | What Makes a Tool Worth Keeping | /articles/what-makes-a-tool-worth-keeping/ | May 31, 2027 | Tooling | /sap2000-ai-automation/ | Written |
 | 50 | Where I Stop Automating | /articles/where-automation-stops/ | Jun 7, 2027 | Tooling | /sap2000-ai-automation/ | Written |
 
-Articles 17, 19, 21, and 23 were written in the same revision, each in its own pull request, and checked by an independent review for engineering accuracy and the language rules. Their status changes to Written when those pull requests merge. Merge the pull request that re-dated the written articles before any of them, or two articles will publish on October 19.
+Every article in the schedule is now written and merged. Articles 17, 19, 21, and 23 were merged in pull requests 4 to 7, and the remaining seventeen in pull requests 8 to 24, each checked by a separate reviewer for engineering accuracy, unsupported claims about the practice, and the language rules before merging. The briefs below are kept as the record of what each article was asked to cover.
 
 Service page balance through article 50, counting published articles: structural engineering sixteen, analysis automation eleven, condition assessment seven, geotechnical six, solar racking four, buried structures three, shop drawing review two, and one article that links only the contact form. Buried structures and shop drawing review remain the thinnest pages. Add a buried structures subject if one is needed as a replacement.
 
@@ -101,7 +101,7 @@ Two working titles were improved earlier while keeping their slugs. "When the So
 
 ## Briefs
 
-Briefs are listed in schedule order. Articles marked Written have no brief, since the article itself is the record.
+Briefs are listed in schedule order. Articles that were already written before the October 2026 revision have no brief, since the article itself is the record. Where an article departs from its brief, the article is the record.
 
 ### 17. Bowing Basement Walls: Causes, Measurement, and Repair
 
@@ -235,19 +235,18 @@ Internal links point backward in time only, so a few useful connections can only
 
 | Make on or after | Edit |
 |---|---|
-| Oct 19, 2026 | In `/articles/masonry-cracks/` (publishes Nov 2), the sentence naming the bowing basement wall article gains a link to `/articles/bowing-basement-walls/`. Make it once both articles are merged. |
 | Oct 26, 2026 | In `/articles/cold-formed-steel/`, the paragraph about connections in thin material gains a link to `/articles/concrete-anchorage-failure-modes/`. |
 | Nov 2, 2026 | In `/articles/condition-assessment/`, the section on distress and damage gains a link to `/articles/bowing-basement-walls/` where it mentions a wall that is bowed. |
 | Nov 16, 2026 | In `/articles/small-projects/`, the sentence about a quick look at one beam in a remodel gains a link to `/articles/removing-a-wall/`. |
-| Nov 30, 2026 | In `/articles/damaged-wood-framing/`, the paragraph on new bearing gains a link to `/articles/removing-a-wall/`, which describes posts and footings for a new beam. |
 | Dec 28, 2026 | In `/articles/ai-checking-work/`, the paragraph about consistency checking gains a link to `/articles/calculation-package/`. |
 | Jan 4, 2027 | In `/articles/condition-assessment/`, the closing paragraph about an inspector's sentence gains a link to `/articles/call-a-structural-engineer/`. |
-| Jan 18, 2027 | In `/articles/pile-group-effects/` (publishes Jan 25), the discussion of when a single pile analysis is adequate gains a link to `/articles/helical-piles/`. This can be made as soon as the helical piles article is merged, since both dates are then in place. |
 | Jan 25, 2027 | In `/articles/laterally-loaded-piles/`, the sentence about pile groups and p-multipliers gains a link to `/articles/pile-group-effects/`. |
 | Mar 15, 2027 | In `/articles/what-is-cande/`, the closing note about the preprocessor gains a second link to `/articles/cande-parametric-sweeps/`. |
 | Mar 22, 2027 | In `/articles/laterally-loaded-piles/`, the paragraph on sign and pole foundations gains a link to `/articles/sports-netting-structures/`. |
 | Apr 26, 2027 | In `/articles/distortional-buckling-dsm/`, the paragraph about finite strip analysis gains a link to `/articles/signature-curve/`. |
 | May 10, 2027 | In `/articles/drawings-from-code/`, the section on what this does not suit gains a link to `/articles/editing-existing-drawings/`. |
+
+Three edits from this table were made on October 13, 2026, because both articles in each pair were already merged and the linking article is the later one: the masonry cracks article now links the bowing basement walls article, the damaged wood framing article links the removing a wall article, and the pile group article links the helical piles article (pull requests 25 to 27).
 
 ## Known exceptions
 
