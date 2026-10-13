@@ -44,7 +44,7 @@ Most repairs fall into a few general types.
 
 **Replacement with temporary support** removes a damaged section, such as a length of sill plate or rim joist, while the structure above is shored, and replaces it with new material. Wood in contact with concrete or masonry is replaced with preservative-treated lumber, and so is framing close to exposed soil in a crawlspace. Fasteners and hangers in treated lumber need corrosion protection, typically hot-dip galvanizing or stainless steel.
 
-**New bearing** adds a beam, a post, or a footing where the original support has deteriorated beyond repair or where the original arrangement was inadequate.
+**New bearing** adds a beam, a post, or a footing where the original support has deteriorated beyond repair or where the original arrangement was inadequate. The posts and footings for a new beam follow the same principles described in the article [Removing a Wall](/articles/removing-a-wall/).
 
 The repair report identifies which members are replaced, which are reinforced, and which remain. Because opening finishes often reveals more damage, the report also states which decisions about newly exposed members are left to the contractor's judgment and on what basis, so the work can continue without a return visit for each member.
 
