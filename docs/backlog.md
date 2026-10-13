@@ -60,5 +60,5 @@ A concept from the same May 2026 chat: a browser tool for building CANDE buried 
 
 | Date | Item | Pull request |
 |---|---|---|
-| Oct 13, 2026 | Renumbered and re-dated the article schedule in the manifest, which completed the items "Renumber the third series in the article manifest" and "Check the retroactive link edit dates for the third series". | This pull request |
+| Oct 13, 2026 | Renumbered and re-dated the article schedule in the manifest, which completed the items "Renumber the third series in the article manifest" and "Check the retroactive link edit dates for the third series". | #3 |
 | Oct 13, 2026 | Created this backlog. Corrected the service page count and the second series retroactive link edit dates in the article manifest. | #2 |
