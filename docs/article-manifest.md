@@ -65,7 +65,7 @@ The two September additions were originally numbered 34 and 38 in the third seri
 
 The third series continues the alternation between engineering subjects and tooling subjects. The subjects are drawn from two sources: the categories of work that appear most often in the practice, and the analysis tooling built for that work.
 
-One deliberate correction is built into this series. The site has five service pages, and through article 27 the solar racking page has no supporting article at all, while the structural engineering page has eight. Articles 28, 29, and 32 address that gap.
+One deliberate correction is built into this series. The site has seven service pages, and through article 27 the solar racking page has no supporting article at all, while the structural engineering page has eight. Articles 28, 29, and 32 address that gap.
 
 | Number | Working title | Slug | Date | Side | Service page |
 |---|---|---|---|---|---|
@@ -157,10 +157,10 @@ Internal links point backward in time only, so a few useful connections can only
 
 | Make on or after | Edit |
 |---|---|
-| Oct 12, 2026 | In `/articles/cold-formed-steel/`, the paragraph about connections in thin material gains a link to `/articles/concrete-anchorage-failure-modes/`. |
-| Nov 9, 2026 | In `/articles/laterally-loaded-piles/`, the sentence about pile groups and p-multipliers gains a link to `/articles/pile-group-effects/`. |
-| Nov 16, 2026 | In `/articles/what-is-cande/`, the closing note about the preprocessor gains a second link to `/articles/cande-parametric-sweeps/`. |
-| Dec 7, 2026 | In `/articles/ai-checking-work/`, the paragraph about consistency checking gains a link to `/articles/calculation-package/`. |
+| Oct 26, 2026 | In `/articles/cold-formed-steel/`, the paragraph about connections in thin material gains a link to `/articles/concrete-anchorage-failure-modes/`. |
+| Nov 23, 2026 | In `/articles/laterally-loaded-piles/`, the sentence about pile groups and p-multipliers gains a link to `/articles/pile-group-effects/`. |
+| Nov 30, 2026 | In `/articles/what-is-cande/`, the closing note about the preprocessor gains a second link to `/articles/cande-parametric-sweeps/`. |
+| Dec 21, 2026 | In `/articles/ai-checking-work/`, the paragraph about consistency checking gains a link to `/articles/calculation-package/`. |
 | Jan 18, 2027 | In `/articles/pile-group-effects/`, the discussion of when a single pile analysis is adequate gains a link to `/articles/helical-piles/`. |
 | Feb 8, 2027 | In `/articles/distortional-buckling-dsm/`, the paragraph about finite strip analysis gains a link to `/articles/signature-curve/`. |
 | Feb 22, 2027 | In `/articles/drawings-from-code/`, the section on what this does not suit gains a link to `/articles/editing-existing-drawings/`. |
