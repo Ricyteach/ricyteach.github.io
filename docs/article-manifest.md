@@ -58,9 +58,9 @@ Jekyll is configured with `future: false`, so each written article becomes visib
 
 | Number | Title | Slug | Date | Audience | Service page | Status |
 |---|---|---|---|---|---|---|
-| 17 | What a Bowing Basement Wall Is Telling You | /articles/bowing-basement-walls/ | Oct 19, 2026 | Owners | /condition-assessment/ | New brief |
+| 17 | Bowing Basement Walls: Causes, Measurement, and Repair | /articles/bowing-basement-walls/ | Oct 19, 2026 | Owners | /condition-assessment/ | New brief |
 | 18 | Why Anchors Fail, and Which Failure Decides the Design | /articles/concrete-anchorage-failure-modes/ | Oct 26, 2026 | Specialty | /structural-engineering/ | Written |
-| 19 | Which Cracks in Brick and Block Walls Mean Something | /articles/masonry-cracks/ | Nov 2, 2026 | Owners | /condition-assessment/ | New brief |
+| 19 | Reading Cracks in Brick and Block Walls | /articles/masonry-cracks/ | Nov 2, 2026 | Owners | /condition-assessment/ | New brief |
 | 20 | When the Software Has No Scripting Interface | /articles/running-legacy-software/ | Nov 9, 2026 | Tooling | /sap2000-ai-automation/ | Written |
 | 21 | Removing a Wall | /articles/removing-a-wall/ | Nov 16, 2026 | Owners | /structural-engineering/ | To write |
 | 22 | The Load Combination Is the Design | /articles/load-combinations/ | Nov 23, 2026 | Engineers | /structural-engineering/ | Written |
@@ -93,7 +93,7 @@ Jekyll is configured with `future: false`, so each written article becomes visib
 | 49 | What Makes a Tool Worth Keeping | /articles/what-makes-a-tool-worth-keeping/ | May 31, 2027 | Tooling | /sap2000-ai-automation/ | To write |
 | 50 | Where I Stop Automating | /articles/where-automation-stops/ | Jun 7, 2027 | Tooling | /sap2000-ai-automation/ | Written |
 
-Articles 17, 19, 21, and 23 were written in the same revision, each in its own pull request. Their status changes to Written when those pull requests merge. Merge the pull request that re-dated the written articles before any of them, or two articles will publish on October 19.
+Articles 17, 19, 21, and 23 were written in the same revision, each in its own pull request, and checked by an independent review for engineering accuracy and the language rules. Their status changes to Written when those pull requests merge. Merge the pull request that re-dated the written articles before any of them, or two articles will publish on October 19.
 
 Service page balance through article 50, counting published articles: structural engineering sixteen, analysis automation eleven, condition assessment seven, geotechnical six, solar racking four, buried structures three, shop drawing review two, and one article that links only the contact form. Buried structures and shop drawing review remain the thinnest pages. Add a buried structures subject if one is needed as a replacement.
 
@@ -103,17 +103,17 @@ Two working titles were improved earlier while keeping their slugs. "When the So
 
 Briefs are listed in schedule order. Articles marked Written have no brief, since the article itself is the record.
 
-### 17. What a Bowing Basement Wall Is Telling You
+### 17. Bowing Basement Walls: Causes, Measurement, and Repair
 
 The most common foundation question in older Ohio housing stock with concrete block basements. Explain what bowing is: the wall bending inward between its supports at the floor framing above and the slab or footing below, under lateral soil pressure. Cover the evidence: a horizontal crack near mid height or along a mortar joint, stair-step cracking toward the corners, shear displacement at the base, and how to measure inward deflection with a string line or level rather than by eye. Cover the usual causes in plain terms: saturated soil from poor drainage, frost, clay that swells, and surcharge near the wall. Explain why drainage comes first in any repair discussion, then the repair families at a general level (bracing with steel members, wall anchors into the yard, carbon fiber straps, excavation and rebuilding) and which conditions each suits, without fees or product endorsements. Explain the question a home inspection report cannot answer, which is whether the movement is ongoing, and how monitoring answers it. Written for buyers, sellers, agents, and landlords.
 
 Internal links: /articles/condition-assessment/, /articles/small-projects/. Service page: /condition-assessment/.
 
-### 19. Which Cracks in Brick and Block Walls Mean Something
+### 19. Reading Cracks in Brick and Block Walls
 
 Crack patterns in brick veneer and concrete block, written for an owner preparing to sell or a buyer reading an inspection report. Shrinkage and thermal cracks, cracks that follow mortar joints in a stair-step pattern, vertical cracks through the units, horizontal cracks, and tapered cracks that are wider at one end. What width, direction, and taper suggest about the cause, and the limits of reading a crack from a photograph. Old, stable movement versus active movement, and how a painted or patched crack that has reopened answers that. Brick veneer is usually a curtain in front of the structure rather than the structure itself, so cracked veneer and a cracked foundation are different questions. Monitoring as a way to answer the question of activity over a season. Drainage and downspout discharge as the most common practical recommendation.
 
-Internal links: /articles/condition-assessment/, /articles/bowing-basement-walls/. Service page: /condition-assessment/.
+Internal links: /articles/condition-assessment/, /articles/small-projects/. The bowing basement wall article is named in the text without a link, since the two were written in separate pull requests; see the retroactive link edits. Service page: /condition-assessment/.
 
 ### 21. Removing a Wall
 
@@ -125,7 +125,7 @@ Internal links: /articles/small-projects/, /articles/condition-assessment/. Serv
 
 Deteriorated sill plates, rim joists, joist ends, and studs at the base of walls, written for landlords, investors, and owners. Where the damage concentrates and why (sills and rim joists near grade, below leaking gutters and downspouts, at plumbing walls). How the extent is established in the field: probing with an awl, sounding, a moisture meter, and opening finishes where needed, and why the extent is almost always larger than what is visible. Why the cause has to be identified before the repair is designed, since replacing framing without stopping the water repeats the job. Termite and other insect damage versus decay, and why a structural evaluation does not substitute for a pest inspection. Repair families at a general level: sistering, replacing sections with temporary support, and new bearing. Note that a city may require an engineer's letter before a permit for the repair.
 
-Internal links: /articles/condition-assessment/, /articles/removing-a-wall/. Service page: /condition-assessment/.
+Internal links: /articles/condition-assessment/, /articles/small-projects/. Service page: /condition-assessment/.
 
 ### 25. Wind on Structures That Are Mostly Air
 
@@ -235,9 +235,11 @@ Internal links point backward in time only, so a few useful connections can only
 
 | Make on or after | Edit |
 |---|---|
+| Oct 19, 2026 | In `/articles/masonry-cracks/` (publishes Nov 2), the sentence naming the bowing basement wall article gains a link to `/articles/bowing-basement-walls/`. Make it once both articles are merged. |
 | Oct 26, 2026 | In `/articles/cold-formed-steel/`, the paragraph about connections in thin material gains a link to `/articles/concrete-anchorage-failure-modes/`. |
 | Nov 2, 2026 | In `/articles/condition-assessment/`, the section on distress and damage gains a link to `/articles/bowing-basement-walls/` where it mentions a wall that is bowed. |
 | Nov 16, 2026 | In `/articles/small-projects/`, the sentence about a quick look at one beam in a remodel gains a link to `/articles/removing-a-wall/`. |
+| Nov 30, 2026 | In `/articles/damaged-wood-framing/`, the paragraph on new bearing gains a link to `/articles/removing-a-wall/`, which describes posts and footings for a new beam. |
 | Dec 28, 2026 | In `/articles/ai-checking-work/`, the paragraph about consistency checking gains a link to `/articles/calculation-package/`. |
 | Jan 4, 2027 | In `/articles/condition-assessment/`, the closing paragraph about an inspector's sentence gains a link to `/articles/call-a-structural-engineer/`. |
 | Jan 18, 2027 | In `/articles/pile-group-effects/` (publishes Jan 25), the discussion of when a single pile analysis is adequate gains a link to `/articles/helical-piles/`. This can be made as soon as the helical piles article is merged, since both dates are then in place. |
