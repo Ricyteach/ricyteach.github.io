@@ -8,18 +8,6 @@ Status values: **Ready** (decided, can be done now), **Waiting** (decided, depen
 
 ## Open items
 
-### Renumber the third series in the article manifest
-
-Status: Ready
-
-The third series briefs in `docs/article-manifest.md` are numbered 28 through 40, but articles 28 and 29 now belong to the second series, which ends January 11, 2027. Renumber the third series to begin at 30 on January 18, 2027, assign Monday dates, and update every cross reference to those numbers in the manifest, including the planning notes and the sentence saying which articles address the solar racking gap. Do this before any third series article is written.
-
-### Check the retroactive link edit dates for the third series
-
-Status: Waiting (do with the renumbering above)
-
-The last three rows of the retroactive link edit table in `docs/article-manifest.md` (the edits that link to the helical piles, signature curve, and editing existing drawings articles) use dates from before the two week shift. Set each date to the publication date of its target article once the third series has been renumbered and dated.
-
 ### Delete stale branches on GitHub
 
 Status: Ready (owner approval required before deleting)
@@ -35,6 +23,20 @@ Three branches contain no work that is missing from the main branch:
 Status: Waiting (on the owner confirming the Group Manager of Civil Engineering position at KBJW is filled)
 
 The hiring notice on the homepage (`index.html`) links to the referral page at `jobs/index.html`. When the position is filled, remove the homepage notice and either remove the referral page or replace its content with a short note that the position has been filled. Confirm the navigation and any other links to `/jobs/` are updated in the same pull request.
+
+### Local search improvements for residential and small building work
+
+Status: Undecided
+
+Recent inquiries for site visits have come from the Dayton, Springfield, and Columbus areas. The October 2026 revision of the article schedule adds articles for property owners, buyers, agents, and contractors, but published local search surveys rank other factors well above article content for local results. The 2026 Whitespark Local Search Ranking Factors survey (https://whitespark.ca/local-search-ranking-factors/) places the Google Business Profile primary category, the business title, the address, and proximity at the top for map results, and a dedicated page for each service with city and neighborhood relevance at the top for local organic results.
+
+Candidate changes, none of them decided:
+
+- Add a short service area section to the condition assessment page naming the Dayton, Springfield, and Columbus areas and the kinds of buildings visited, stated factually.
+- Consider dedicated pages for the most common residential questions (basement walls and foundation cracks, damaged framing, wall removal), each linking the relevant articles once they publish.
+- Outside the repository: confirm the Google Business Profile primary category and services list match the condition assessment work, and ask satisfied local clients for a review.
+
+Decide whether local residential work should be pursued harder before doing any of this. The fees for these jobs are modest and each one requires travel, so more of them is only useful up to the number of site visits one person can make.
 
 ### Email subscription for the article series
 
@@ -58,4 +60,5 @@ A concept from the same May 2026 chat: a browser tool for building CANDE buried 
 
 | Date | Item | Pull request |
 |---|---|---|
-| Oct 13, 2026 | Created this backlog. Corrected the service page count and the second series retroactive link edit dates in the article manifest. | This pull request |
+| Oct 13, 2026 | Renumbered and re-dated the article schedule in the manifest, which completed the items "Renumber the third series in the article manifest" and "Check the retroactive link edit dates for the third series". | This pull request |
+| Oct 13, 2026 | Created this backlog. Corrected the service page count and the second series retroactive link edit dates in the article manifest. | #2 |

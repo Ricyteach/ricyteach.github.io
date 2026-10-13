@@ -8,7 +8,7 @@ related:
 service_page: "/sap2000-ai-automation/"
 ---
 
-The [previous article](/articles/load-combinations/) argued that the load combination set determines whether an analysis answers the right question, and that combination errors are invisible in the output. The obvious response to an error class that is invisible, repetitive, and purely procedural is to stop performing it by hand.
+An [earlier article on load combinations](/articles/load-combinations/) argued that the load combination set determines whether an analysis answers the right question, and that combination errors are invisible in the output. The obvious response to an error class that is invisible, repetitive, and purely procedural is to stop performing it by hand.
 
 That is what I have been building. It has taken longer than the model generation work did, for a reason worth explaining.
 

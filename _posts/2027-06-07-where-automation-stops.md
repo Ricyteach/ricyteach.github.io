@@ -1,14 +1,14 @@
 ---
 layout: article
 title: "Where I Stop Automating"
-description: "The closing article of the series, and the counterweight to the tooling articles. The specific decisions that stay with the engineer, and why the half of the work that got faster is not the half you are hiring."
+description: "The closing article on tooling, and the counterweight to the tooling articles. The specific decisions that stay with the engineer, and why the half of the work that got faster is not the half you are hiring."
 related:
   - "ai-toolkit"
   - "calculation-package"
 service_page: "/sap2000-ai-automation/"
 ---
 
-This series has spent a lot of words on tools. Generating model input, driving programs that cannot be scripted, sweeping analyses across ranges, producing drawings from code, reading calculation sheets nobody wants to change. It would be reasonable to finish the year with an article about what comes next.
+This series has spent a lot of words on tools. Generating model input, driving programs that cannot be scripted, sweeping analyses across ranges, producing drawings from code, reading calculation sheets nobody wants to change. It would be reasonable to finish with an article about what comes next.
 
 Instead I want to be specific about the boundary, because the tooling is only defensible if the boundary is real, and a boundary that is asserted rather than described is not worth much.
 
@@ -54,6 +54,6 @@ It has not touched the other half. Deciding what the structure is, choosing how 
 
 A client hiring this practice is hiring the second half. The first half is the reason I can take on the [smaller bounded work](/articles/small-projects/) that larger firms decline, and the reason a parametric study is affordable rather than prohibitive. But the deliverable is judgment, documented well enough that somebody else can [check it](/articles/calculation-package/), and signed by the engineer who exercised it.
 
-That was the argument at the start of this series, when I wrote about the [first tool I built](/articles/ai-toolkit/), and after two dozen articles about tooling it is still the argument. The tools are worth having. They are not what you are paying for.
+That was the argument at the start of this series, when I wrote about the [first tool I built](/articles/ai-toolkit/), and after many articles about tooling it is still the argument. The tools are worth having. They are not what you are paying for.
 
 That distinction is the basis of how I work, across [analysis automation](/sap2000-ai-automation/) and everything else in the practice.
