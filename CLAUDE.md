@@ -4,6 +4,8 @@ This repository is the source for tautengr.com, the website of Taut Engineering,
 
 Read this file before making any change. Read `docs/article-manifest.md` before writing or scheduling any article.
 
+Read `docs/backlog.md` before starting any site change that is not an article. It is the single record of pending site changes. Any decision about the site made during a session is added to it before the session ends, and finished items move to its completed section with the pull request number.
+
 Inspect the repository before changing anything. Confirm structure, front matter fields, class names, and design tokens against the actual files, not against this document. If this document and the repository disagree, the repository is correct and this document should be corrected in the same pull request.
 
 ## Voice
