@@ -8,7 +8,7 @@ related:
 service_page: "/sap2000-ai-automation/"
 ---
 
-The [previous article](/articles/concrete-anchorage-failure-modes/) described the failure modes that govern anchorage to concrete, and made the point that edge distance, spacing, and crack state usually decide the answer rather than the size of the anchor. That has a practical consequence. If the governing variables are geometric, then what a client actually needs is rarely a single answer. They need to know which geometries work.
+An [earlier article on why anchors fail](/articles/concrete-anchorage-failure-modes/) described the failure modes that govern anchorage to concrete, and made the point that edge distance, spacing, and crack state usually decide the answer rather than the size of the anchor. That has a practical consequence. If the governing variables are geometric, then what a client actually needs is rarely a single answer. They need to know which geometries work.
 
 Anchorage is a small calculation with many inputs, repeated over and over with the numbers changed. That is close to a definition of work worth automating.
 
@@ -26,7 +26,7 @@ An embedment sweep keeps the anchor pattern fixed and varies the depth, which sh
 
 An edge distance study varies the position of the pattern relative to the free edges. The result is usually a map with a fairly sharp boundary: a region where the anchorage works comfortably, a narrow band where it is marginal, and a region where no reasonable anchor solves it. Handing a contractor that map is far more useful than handing them a single dimension they have to hit exactly.
 
-A diameter comparison across a family of anchors, at a fixed geometry, frequently demonstrates the point from the previous article in the most convincing way available: the demand to capacity ratio barely moves, because the concrete is governing and the concrete does not care how thick the bolt is.
+A diameter comparison across a family of anchors, at a fixed geometry, frequently demonstrates the point from that earlier article on anchorage failure modes in the most convincing way available: the demand to capacity ratio barely moves, because the concrete is governing and the concrete does not care how thick the bolt is.
 
 ## What it changes about the conversation
 
