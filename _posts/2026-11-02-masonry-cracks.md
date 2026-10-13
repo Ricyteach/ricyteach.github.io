@@ -36,7 +36,7 @@ Some patterns indicate that part of the building has moved relative to another p
 
 **Cracks through the units** break the brick or block itself instead of following the mortar. Mortar is normally the weaker material, so a crack that cuts straight through a column of bricks, one above another, suggests either a large force or a long, continuous restraint, and it deserves a closer look than a crack in mortar alone. It can also mean the mortar is harder than the brick, which happens when old, soft brick is repointed with modern cement mortar.
 
-**Horizontal cracks in basement walls** are a separate case. In a block foundation wall, a horizontal crack near the middle of the wall height usually indicates bending under the soil pressure behind it, which I described in the article "Bowing Basement Walls: Causes, Measurement, and Repair."
+**Horizontal cracks in basement walls** are a separate case. In a block foundation wall, a horizontal crack near the middle of the wall height usually indicates bending under the soil pressure behind it, which I described in the article [Bowing Basement Walls: Causes, Measurement, and Repair](/articles/bowing-basement-walls/).
 
 **Offset across a crack** is often more informative than width. If the masonry on one side of the crack has shifted in or out relative to the other side, or slid along the crack, the movement was larger than the opening alone suggests. I record both the width and the offset.
 
